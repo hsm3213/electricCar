@@ -47,3 +47,10 @@ input::placeholder{color:#999}
 .inp_sel.error > input{border:1px solid #e24f39}
 .inp_sel.error .inp_text{color:#e24f39}
 .inp_sel input[type="text"]:disabled{border:1px solid #ced3d9;color:#868e96;background:#f2f4f5}
+
+.inp_swich{position:relative;width:50px;height:28px;}
+.inp_swich input{opacity:0;position:absolute;top:0;left:0}
+.inp_swich input + label{display:block;width:100%;height:28px;border-radius:14px;background:#c4c4c4}
+.inp_swich input + label:before{content:"";width:24px;height:24px;background:#fff;border-radius:50%;position:absolute;top:2px;left:2px;transition:all ease .3s 0s;}
+.inp_swich input:checked + label{background:#333642}
+.inp_swich input:checked + label:before{left:24px}
