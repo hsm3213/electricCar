@@ -3,7 +3,7 @@
 .blind{font-size:0;line-height:0;position:absolute;left:-9999em}
 
 /* button */
-.btn_group{dis1y:flex;margin:0 -4.5px}
+.btn_group{display:flex;margin:0 -4.5px}
 .btn_group a,
 .btn_group button{flex:1;margin:0 4.5px}
 .btn_basic{height:54px;line-height:54px;border-radius:10px;background:#333642;font-size:16px;color:#fff;text-align:center}
