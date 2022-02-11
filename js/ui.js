@@ -99,6 +99,12 @@ $(function(){
     $('.accordion_wrap .ctrl').on('click',function(){
         $(this).toggleClass('on');
     });
+    
+    //popup close
+    $('.alert_wrap .btn_close').on('click',function(){
+        $(this).closest('.alert_wrap').hide();
+        $('.dimmed').hide();
+    });
 });
 
 
