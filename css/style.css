@@ -1,7 +1,7 @@
 @import url(main.css);
 
 /* dimmed */
-.dimmed{display:none;z-index:8999;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5)}
+.dimmed{display:none;z-index:100;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5)}
 
 /* button */
 .btn_group{display:flex;margin:0 -4.5px}
@@ -86,3 +86,20 @@ input::placeholder{color:#999}
 .step_list li{display:inline-block;width:22px;height:22px;color:#a6acb1;background:#fff;text-align:center;line-height:22px;border-radius:50%;font-size:11px}
 .step_list li ~ li{margin-left:6px}
 .step_list li.on{color:#fff;background:#e24f39}
+
+/* alert */
+.alert_wrap{overflow:hidden;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999;border-radius:20px;width:calc(100% - 72px)}
+.alert_wrap .inner{background:#fff;padding:30px 20px}
+.alert_wrap .inner > .title{font-size:22px;font-weight:400;line-height:30px;margin-bottom:10px;letter-spacing:-2px}
+.alert_wrap .inner > .title b{font-weight:600}
+.alert_wrap .inner > .s_title{font-size:18px;font-weight:500;line-height:26px;margin-bottom:10px;letter-spacing:-2px}
+.alert_wrap .text{font-size:12px;color:#83858e;line-height:20px}
+.alert_wrap .ico_list{margin-top:20px}
+
+/* list */
+.ico_list li{position:relative}
+.ico_list li i{position:relative;display:inline-block;width:40px;height:40px;background:#f4f4f4;border-radius:50%}
+.ico_list li i:after{content:"";position:absolute;top:50%;left:50%;margin:-10px 0 0 -10px;width:20px;height:20px;background:#333}
+.ico_list li .context{margin-left:14px;display:inline-block;vertical-align:top}
+.ico_list li .title{font-size:14px;line-height:22px;font-weight:500;display:block}
+.ico_list li .text{color:#83858e;font-size:12px;display:block}
