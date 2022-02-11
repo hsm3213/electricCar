@@ -1,0 +1,64 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url(main.css);
+
+@font-face{font-family:"Pretendard";src:url("../font/Pretendard-Thin.woff") format('woff');font-weight:100;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../font/Pretendard-ExtraLight.woff") format('woff');font-weight:200;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../font/Pretendard-ExtraLight.woff") format('woff');font-weight:200;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../font/Pretendard-Light.woff") format('woff');font-weight:300;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../font/Pretendard-Regular.woff") format('woff');font-weight:400;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../font/Pretendard-Medium.woff") format('woff');font-weight:500;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../font/Pretendard-SemiBold.woff") format('woff');font-weight:600;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../font/Pretendard-Bold.woff") format('woff');font-weight:700;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../font/Pretendard-ExtraBold.woff") format('woff');font-weight:800;font-display:swap}
+@font-face{font-family:"Pretendard";src:url("../font/Pretendard-Black.woff") format('woff');font-weight:900;font-display:swap}
+html{color:#333642;font-size:14px;font-weight:400;line-height:22px;font-family:"Pretendard"}
+*{box-sizing:border-box;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {margin:0;padding:0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display: block;}
+body{-webkit-text-size-adjust:none;-webkit-overflow-scrolling:touch;}
+body, html{width:100%;height:100%;}
+h1, h2, h3, h4, h5, h6{font-size:100%;}
+ol, ul, li ,dl, dt, dd{list-style:none outside none;padding:0;margin:0;}
+hr{display:none;}
+span{margin:0;padding:0;outline:0;}
+fieldset, img, table, caption, tbody, tfoot, thead, tr, th, td, button, hr{border:0;}
+address, caption, cite, code, dfn, em, strong, th, var, i{font-style: normal;}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after{content:'';content: none;}
+table{border-collapse:collapse;border-spacing:0;width:100%;word-break:break-word;}
+img{vertical-align:middle;}
+a{text-decoration:none;cursor:pointer;color:#6f6f6f;}
+a:active, a:hover{text-decoration:none;}
+a.link {color:#141414;text-decoration:underline;}
+input, select, label{vertical-align:middle;}
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+.selector:focus select,
+.selectorForm:focus select {outline:none;}
+input, select, textarea, button{font-size:100%;vertical-align:middle;padding:0;margin:0;}
+button,input[type='text'],input[type='password'],input[type='tel'],input[type='num'],input[type='button'],input[type='submit'],input[type='reset'],input[type='file']{-webkit-appearance:button; border-radius:0}
+button,
+select{outline:none;}
+input[type='search']::-webkit-search-cancel-button{-webkit-appearance:none;}
+textarea{resize:none;width:100%;box-shadow:none;box-sizing:border-box;overflow:auto;}
+button{border:0 none;background-color:transparent;cursor:pointer;vertical-align:middle;outline:none;}
+caption, legend{display:none;}
+select{appearance:none;-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;}
+select::-ms-expand{display:none;}
+select[disabled] {color:#999;}
+input[type='text'][disabled],input[type='password'][disabled]{background:#f9f9f9;}
+input[type=text]::-ms-clear{display:none;}
+
+:-webkit-input-placeholder {color:#999;text-align:left;}
+:-moz-input-placeholder {color:#999;text-align:left;}
+:-ms-input-placeholder {color:#999;text-align:left;}
+::placeholder {color:#999;text-align:left;}
+
+.blind{font-size:0;line-height:0;position:absolute;left:-9999em}
+.blind{position:absolute;clip:rect(0,0,0,0);width:1px;height:1px;margin:-1px;overflow:hidden;}
