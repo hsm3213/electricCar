@@ -22,7 +22,7 @@
     .guideTop .utilMenu li{float:left;margin:0 5px}
     .guideTop .utilMenu li a{font-size:14px;color:#fff;text-decoration:underline}
 
-    .guideCon{padding:80px 20px 20px}
+    .guideCon{padding:80px 30px 20px}
     .guideCon h1{font-size:20px}
 
 	/* Table */
@@ -60,6 +60,8 @@
     .section h1{padding:10px 0}
     .group{padding:10px 0}
     html{background:#f2f4f5}
+
+    .section.tab{min-height:1100px}
 </style>
 <script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
 <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
@@ -80,6 +82,7 @@
         <li><a href="#" id="font">font</a></li>
         <li><a href="#" id="button">button</a></li>
         <li><a href="#" id="input">input</a></li>
+        <li><a href="#" id="tab">tab</a></li>
         <li><a href="#" id="table">table</a></li>
         <li><a href="#" id="popup">popup</a></li>
         <li><a href="#" id="component">component</a></li>
@@ -87,10 +90,61 @@
 </div>
 <div class="guideCon">
 	
-    <!-- 폰트 -->
-    <div class="section font">
+	
+    <!-- 탭 -->
+    <div class="section tab">        
+        <h1>tab fix</h1>
+        <div class="group">
+            <div class="tab_area fixed_tab">
+                <ul class="tab_list">
+                    <li class="on"><a href="#">tab1</a></li>
+                    <li><a href="#">tab2</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <h1>tab</h1>
+        <div class="group">
+            <div class="tab_area">
+                <ul class="tab_list">
+                    <li class="on"><a href="#">tab1</a></li>
+                    <li><a href="#">tab2</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="group">
+            <div class="tab_area">
+                <ul class="tab_list">
+                    <li class="on"><a href="#">tab1</a></li>
+                    <li><a href="#">tab2</a></li>
+                    <li><a href="#">tab3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="group">
+            <div class="tab_area">
+                <ul class="tab_list">
+                    <li class="on"><a href="#">tab1</a></li>
+                    <li><a href="#">tab2</a></li>
+                    <li><a href="#">tab3</a></li>
+                    <li><a href="#">tab4</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <h1>tab scroll</h1>
+        <div class="group">
+            <div class="tab_area scroll_tab">
+                <ul class="tab_list">
+                    <li class="on"><a href="#">tab1</a></li>
+                    <li><a href="#">tab2</a></li>
+                    <li><a href="#">tab3</a></li>
+                    <li><a href="#">tab4</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <!-- 폰트 -->
+    <!-- 탭 -->
 
     <!-- 기본규칙 -->
     <div class="section basic">
@@ -115,6 +169,11 @@
         </ul>
     </div>
     <!-- 기본규칙 -->
+    
+    <!-- 폰트 -->
+    <div class="section font">
+    </div>
+    <!-- 폰트 -->
 	
     <!-- 버튼 -->
     <div class="section button">

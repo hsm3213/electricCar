@@ -103,3 +103,15 @@ input::placeholder{color:#999}
 .ico_list li .context{margin-left:14px;display:inline-block;vertical-align:top}
 .ico_list li .title{font-size:14px;line-height:22px;font-weight:500;display:block}
 .ico_list li .text{color:#83858e;font-size:12px;display:block}
+
+/* tab */
+.tab_area{position:relative;border-bottom:1px solid #d1d7dd;box-sizing:border-box;margin:0 -30px}
+.tab_area .tab_list{display:flex}
+.tab_area .tab_list li{flex:1;height:59px;padding-bottom:2px;box-sizing:border-box}
+.tab_area .tab_list li.on{border-bottom:3px solid #333642}
+.tab_area .tab_list li a{display:block;width:100%;height:56px;line-height:56px;text-align:center;font-size:16px;font-weight:600;color:#6b747d}
+.tab_area .tab_list li.on a{color:#333642}
+.tab_area.fixed{position:fixed;top:60px;width:100%;background:#f2f4f5;z-index:99}
+.tab_area.scroll_tab{overflow-x:auto}
+.tab_area.scroll_tab::-webkit-scrollbar{display:none}
+.tab_area.scroll_tab li{flex:0 0 140px}
