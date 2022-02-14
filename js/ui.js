@@ -95,10 +95,8 @@
 })(window.jQuery, window);
 
 $(function(){
-    if($('.fixed_tab').length > 0){
-        fixed_tab();
-    }
-    
+    if($('.fixed_tab').length > 0){fixed_tab();}
+
     //accordion
     $('.accordion_wrap .ctrl').on('click',function(){
         $(this).toggleClass('on');
