@@ -124,20 +124,20 @@ function side_open(){
 	const ic_menu = document.querySelector('.main_header .ic_menu');
 	const side_menu = document.querySelector('#side_menu');
 	const ic_close = document.querySelector('#side_menu .ic_close');
-	const side_setting = document.querySelector('#side_menu .gnb .setting');
+	const side_setting = document.querySelector('#side_menu .header .setting');
 	const app_setting = document.querySelector('.app_setting');
 	const setting_back = document.querySelector('.app_setting .ic_back');
 	ic_menu.addEventListener('click', function(){
-		side_menu.style.left = 0
+		side_menu.style.right = 0
 	});
 	ic_close.addEventListener('click', function(){
-		side_menu.style.left = "100%"
+		side_menu.style.right = "100%"
 	});
 	side_setting.addEventListener('click', function(){
-		app_setting.style.left = 0
+		app_setting.style.right = 0
 	});
 	setting_back.addEventListener('click', function(){
-		app_setting.style.left = "100%"
+		app_setting.style.right = "100%"
 	});
 }
 function darkmode(){
@@ -157,17 +157,15 @@ function popup_open(obj){
 	dim_open();
 }
 function dim_open(){
-	let dim = '';
-	dim += '<div class="layer_dim"></div>';
-	if($('.layer_dim').length < 1){
-		$('body').append(dim);
+	let open_popup = $('[class^="layer_popup"].open').length;
+	if(open_popup <= 1){
+		$('.layer_dim').show();
 	}
 }
 function popup_close(obj){
-	let dim = $('.layer_dim');
 	let open_popup = $('[class^="layer_popup"].open').length;
 	obj.closest('[class^="layer_popup"]').removeClass('open');
 	if(open_popup <= 1){
-		dim.remove();
+		$('.layer_dim').hide();
 	}
 }
