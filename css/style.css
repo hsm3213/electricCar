@@ -1,5 +1,16 @@
 @import url(main.css);
 
+/* layout */
+#header{position:fixed;width:100%;height:100%;z-index:99;height:60px;background:var(--background)}
+#container{padding:60px 0 62px}
+#actionBar.hide{bottom:calc(-70px - env(safe-area-inset-bottom))}
+.main #header{height:70px}
+.main #container{padding-top:70px}
+
+#header .page_title{padding:0 60px;text-align:center;font-size:18px;font-weight:600;height:60px;line-height:60px}
+#header .ic_back{position:absolute;top:17px;left:19px}
+#header .ic_home{position:absolute;top:17px;right:23px}
+
 /* dimmed */
 .dimmed{display:none;z-index:100;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5)}
 

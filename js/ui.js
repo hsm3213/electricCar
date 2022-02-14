@@ -94,28 +94,7 @@
     window.mvJs = mvJs;
 })(window.jQuery, window);
 
-$(function(){
-    if($('.fixed_tab').length > 0){fixed_tab();}
-
-    //accordion
-    $('.accordion_wrap .ctrl').on('click',function(){
-        $(this).toggleClass('on');
-    });
-    
-    //popup close
-    $('.alert_wrap .btn_close').on('click',function(){
-        $(this).closest('.alert_wrap').hide();
-        $('.dimmed').hide();
-    });
-
-    //tab
-    $('.tab_area .tab_list li a').on('click',function(e){
-        e.preventDefault();
-        $(this).parent('li').addClass('on').siblings('li').removeClass('on');
-    });
-});
-
-
+//main
 function favorite_slide(){
 	const swiper_favorite = new Swiper(".favorite_area", {
 		slidesPerView: 'auto',
@@ -189,4 +168,54 @@ function fixed_tab(){
             $('.tab_area.fixed_tab').removeClass('fixed');
         }
     });
-}   
+}
+
+//acriontbar
+// function hideDock(){
+//     $('#actionBar').addClass('hide');
+// }
+// function showDock(){
+//     $('#actionBar').removeClass('hide');
+// }
+// function scrollDock(){
+//     $(window).on('mousewheel',function(e){
+//         var wheel = e.originalEvent.wheelDelta;
+//         if(wheel>0){
+//             showDock();
+//         }else{
+//             hideDock();
+//         }
+//     });
+// }
+
+//accordion
+function accordion(){
+    $('.accordion_wrap .ctrl').on('click',function(){
+        $(this).toggleClass('on');
+    });
+}
+
+//alert popup
+function popupAlert(){
+    $('.alert_wrap .btn_close').on('click',function(){
+        $(this).closest('.alert_wrap').hide();
+        $('.dimmed').hide();
+    });
+}
+
+//tab
+function tab(){
+    $('.tab_area .tab_list li a').on('click',function(e){
+        e.preventDefault();
+        $(this).parent('li').addClass('on').siblings('li').removeClass('on');
+    });
+}
+
+//jquery
+$(function(){
+    // scrollDock();
+    if($('.fixed_tab').length > 0){fixed_tab();}
+    if($('.accordion_wrap').length > 0){accordion();}
+    if($('.alert_wrap').length > 0){popupAlert();}
+    if($('.tab_area').length > 0){tab();}
+});
