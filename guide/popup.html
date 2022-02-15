@@ -23,6 +23,7 @@
 		<button type="button" data-popup="layer_simple01">앱접근권한(ios)</button>
 		<button type="button" data-popup="layer_simple02">앱접근권한(안드로이드)</button>
 		<button type="button" data-popup="layer_simple03">업데이트</button>
+		<button type="button" data-popup="layer_simple04">아이디 확인</button>
 	</div>
 
 	<div id="layer_simple01" class="layer_popup simple">
@@ -105,6 +106,24 @@
 			</div>
 		</div>
 	</div>
+	<!-- x버튼 있는 팝업 -->
+	<div id="layer_simple04" class="layer_popup03 simple">
+		<div class="layer_head">
+			<p class="title02">아이디 확인</p>
+			<button type="button" class="ic_close"><span class="blind">닫기버튼</span></button>
+		</div>
+		<div class="layer_cont">
+			<p class="find_text">입력하신 정보로 찾은 아이디입니다.</p>
+			<div class="inp_find">
+				<input type="text" value="shin***" disabled>
+			</div>
+			<div class="btn_group full">
+				<button type="button" class="btn_basic btn_gray"><span>비밀번호 찾기</span></button>
+				<button type="button" class="btn_basic"><span>로그인 하기</span></button>
+			</div>
+		</div>
+	</div>
+	<!-- // x버튼 있는 팝업 -->
 	<div class="layer_dim"></div>
 	<script>
 		$('button').click(function(){

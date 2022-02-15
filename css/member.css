@@ -1,0 +1,35 @@
+/* member01 로그인 */
+.login_logo{margin:20px 0 50px}
+.login_logo .sample{width:130px;height:29px;margin:0 auto;background:#000}
+
+.inp_area .inp_sel:not(:first-of-type){margin-top:8px}
+.chk_area{margin-top:12px}
+.chk_area .inp_sel{display:inline-block}
+.chk_area .inp_sel:not(:first-of-type){margin-left:16px}
+
+.member .btn_group{margin-top:35px}
+
+.list_findInfo{display:flex;justify-content:center;margin-top:30px}
+.list_findInfo li{position:relative}
+.list_findInfo li:not(:first-of-type){padding-left:24px}
+.list_findInfo li:not(:first-of-type)::before{content:'';display:inline-block;position:absolute;left:12px;top:4px;width:1px;height:14px;background:#C0C6C9}
+/* // member01 로그인 */
+
+.tab_body{margin-top:30px;padding:0 30px}
+.tab_cont{display:none}
+.tab_cont.on{display:block}
+.tab_cont .inp_box{display:flex;width:100%}
+.tab_cont .inp_box .inp_sel{flex:1 auto;}
+.tab_cont .inp_box .inp_sel input[type="text"]{border-top-right-radius:0;border-bottom-right-radius:0}
+.tab_cont .inp_box .select_wrap{flex:0 0 130px;width:130px;margin-top:27px}
+.tab_cont .inp_box .select_wrap .ui-selectmenu-button{border-top-left-radius:0;border-bottom-left-radius:0}
+.tab_cont .select_box .title{font-size:13px;font-weight:500;margin-bottom:5px}
+.tab_cont .select_box .select_cont{display:flex;width:100%}
+.tab_cont .select_box .select_cont .select_wrap{flex:0 0 33.33%;width:33.33%}
+.tab_cont .select_box .select_cont .select_wrap:not(:first-of-type){margin-left:6px}
+.tab_cont .inp_field:not(:first-of-type){margin-top:18px}
+.tab_cont .btn_group{margin-top:40px}
+
+.txt_notice{margin-top:15px}
+.txt_notice p{position:relative;padding-left:10px;color:#83858E;font-size:13px;line-height:21px}
+.txt_notice p::before{content:'※';display:inline-block;position:absolute;left:0;top:0}
