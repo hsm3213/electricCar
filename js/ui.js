@@ -198,14 +198,30 @@ function popupAlert(){
 function tab(){
     $('.tab_area .tab_list li a').on('click',function(e){
         e.preventDefault();
-        const tab_idx = $(this).parent().index();
+        // const tab_idx = $(this).parent().index();
         $(this).parent('li').addClass('on').siblings('li').removeClass('on');
-        $('.tab_area .tab_cont').removeClass('on').eq(tab_idx).addClass('on');
+        // $('.tab_area .tab_cont').removeClass('on').eq(tab_idx).addClass('on');
     });
 }
+
 // 뒤로가기 이벤트
 function history_back(){
     window.history.back();
+}
+
+//기간선택
+function period(){
+    $('.inp_period .inp_btn label').on('click',function(){
+        var target = $('.inp_period .inp_btn'),
+            $this = $(this);
+        target.removeClass('check');
+        $this.closest('.inp_btn').addClass('check')
+        if($('.inp_period .inp_btn:nth-child(4)').hasClass('check')){
+            $('.sel_period').show();
+        }else{
+            $('.sel_period').hide();
+        }
+    })
 }
 
 //jquery
@@ -220,4 +236,5 @@ $(function(){
             history_back();
         });
     }
+    if($('.inp_period').length > 0){period();}
 });
