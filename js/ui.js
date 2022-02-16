@@ -224,6 +224,16 @@ function period(){
     })
 }
 
+function toastPopup(){
+    $('.click_toast').on('click',function(){
+        var toastName = $(this).attr('data-popup');
+        $('#'+toastName).addClass('on');
+        setTimeout(function(){
+            $('#'+toastName).removeClass('on');
+        },1500)
+    })
+}
+
 //jquery
 $(function(){
     // scrollDock();
@@ -237,4 +247,5 @@ $(function(){
         });
     }
     if($('.inp_period').length > 0){period();}
+    if($('.click_toast').length > 0){toastPopup();}
 });

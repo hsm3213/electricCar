@@ -270,3 +270,8 @@ input::placeholder{color:#999;font-family:"Pretendard"}
 .tbl_form .form_list li .select_wrap{flex:0 0 85px}
 .tbl_form .form_list li .select_wrap .ui-selectmenu-button{height:28px;padding:0 20px 0 0;line-height:28px;text-align:center}
 .tbl_form .form_list li .select_wrap .ui-selectmenu-button:after{right:5px}
+
+/* toast popup */
+.toast_popup{position:absolute;bottom:-36px;left:50%;transform:translateX(-50%);transition:all ease .5s 0s;opacity:0}
+.toast_popup.on{bottom:70px;opacity:1}
+.toast_popup p{height:36px;line-height:36px;padding:0 25px;font-size:13px;color:#fff;background:#333642;border-radius:20px;white-space:nowrap}
