@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko" color-theme="light">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="format-detection" content="telephone=no">
+    <title>신세계 전기차 앱 회원가입 | 회원정보</title>
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/style.css">
+	<script src="../../js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../../js/selectbox.js"></script>
+	<script src="../../js/ui.js"></script>
+</head>
+<body>
+	<header id="header">
+		<button type="button" class="ic_back"><span class="blind">뒤로가기</span></button>
+		<h2 class="page_title">회원가입</h2>
+	</header>
+	<div id="container">
+		<div class="content member">
+			<div class="step_wrap">
+				<p class="title">회원정보</p>
+				<ol class="step_list">
+					<li>1</li>
+					<li>2</li>
+					<li class="on">3</li>
+					<li>4</li>
+				</ol>
+			</div>
+			<div class="join_wrap">
+				<div class="join_box">
+					<p class="join_title">기본정보(필수)</p>
+					<div class="row_group">
+						<div class="inp_email">
+							<label for="id">아이디</label>
+							<div class="inp_group">
+								<div class="inp_sel">
+									<input type="text" id="id" placeholder="이메일">
+								</div>
+								<div class="inp_connect">@</div>
+								<div class="inp_sel">
+									<div class="select_wrap">
+										<select data-msg="이메일 선택" data-title="이메일 선택"><!-- data-title값을 titSelect에 넣어줌 -->
+											<option value="list sample 1">gmail.com</option>
+											<option value="list sample 2">naver.com</option>
+											<option value="list sample 3">nate.com</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="inp_sel">
+							<label for="text2">비밀번호</label>
+							<input type="text" id="text2" placeholder="비밀번호를 입력해 주세요.">
+							<input type="text" id="text2" placeholder="비밀번호를 확인해 주세요.">
+						</div>
+						<div class="txt_notice">
+							<p>문자, 숫자, 특수문자를 포함 하여 8자 이상, 문자와 숫자만 사용하실 경우 10자 이상으로 입력 하세요.</p>
+						</div>
+					</div>
+					<div class="row_group">
+						<div class="inp_sel">
+							<label for="text1">이름(한글)</label>
+							<input type="text" id="text1" placeholder="홍길동">
+						</div>
+						<div class="inp_mix">
+							<label for="tel">휴대폰 번호</label>
+							<div class="inp_group">
+								<div class="inp_sel">
+									<div class="select_wrap">
+										<select id="tel" data-msg="010" data-title="010"><!-- data-title값을 titSelect에 넣어줌 -->
+											<option value="list sample 1">010</option>
+											<option value="list sample 2">011</option>
+											<option value="list sample 3">016</option>
+										</select>
+									</div>
+								</div>
+								<div class="inp_sel">
+									<input type="text">
+								</div>
+								<div class="inp_sel">
+									<input type="text">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row_group">
+						<div class="inp_rdo">
+							<p class="title">내국인/외국인</p>
+							<div class="inp_sel">
+								<input type="radio" id="rdo_local01" name="rdo_local">
+								<label for="rdo_local01"><span>내국인</span></label>
+							</div>
+							<div class="inp_sel">
+								<input type="radio" id="rdo_local02" name="rdo_local">
+								<label for="rdo_local02"><span>외국인</span></label>
+							</div>
+						</div>
+						<div class="inp_rdo">
+							<p class="title">성별선택</p>
+							<div class="inp_sel">
+								<input type="radio" id="rdo_sex01" name="rdo_sex">
+								<label for="rdo_sex01"><span>남성</span></label>
+							</div>
+							<div class="inp_sel">
+								<input type="radio" id="rdo_sex02" name="rdo_sex">
+								<label for="rdo_sex02"><span>여성</span></label>
+							</div>
+						</div>
+					</div>
+					<div class="row_group">
+						<div class="inp_mix">
+							<label for="birth">생년월일</label>
+							<div class="inp_group">
+								<div class="inp_sel">
+									<div class="select_wrap">
+										<select id="birth" data-msg="년" data-title="출생년도 선택"><!-- data-title값을 titSelect에 넣어줌 -->
+											<option value="list sample 1">1988</option>
+											<option value="list sample 2">1989</option>
+											<option value="list sample 3">1999</option>
+										</select>
+									</div>
+								</div>
+								<div class="inp_sel">
+									<div class="select_wrap">
+										<select data-msg="월" data-title="출생월 선택"><!-- data-title값을 titSelect에 넣어줌 -->
+											<option value="list sample 1">01</option>
+											<option value="list sample 2">02</option>
+											<option value="list sample 3">03</option>
+										</select>
+									</div>
+								</div>
+								<div class="inp_sel">
+									<div class="select_wrap">
+										<select data-msg="일" data-title="출생일 선택"><!-- data-title값을 titSelect에 넣어줌 -->
+											<option value="list sample 1">01</option>
+											<option value="list sample 2">02</option>
+											<option value="list sample 3">03</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="inp_rdo">
+							<div class="inp_sel">
+								<input type="radio" id="rdo_calendar01" name="rdo_calendar">
+								<label for="rdo_calendar01"><span>양력</span></label>
+							</div>
+							<div class="inp_sel">
+								<input type="radio" id="rdo_calendar02" name="rdo_calendar">
+								<label for="rdo_calendar02"><span>음력</span></label>
+							</div>
+						</div>
+					</div>
+					<div class="row_group">
+						<div class="save_card_wrap">
+							<p class="title">결제 정보 (필수)</p>
+							<div class="save_card">
+								<p>본인 명의의 신용카드를 등록해 주세요.</p>
+								<div class="btn_group">
+									<button type="button" class="btn_basic btn_md"><span>결제정보 등록</span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="join_box car">
+					<p class="join_title">차량 선택정보</p>
+					<div class="row_group">
+						<p class="title">차량 제조사</p>
+						<div class="select_wrap">
+							<select data-msg="차량선택을 해주세요." data-title="차량 제조사 선택"><!-- data-title값을 titSelect에 넣어줌 -->
+								<option value="list sample 1">현대</option>
+								<option value="list sample 2">현대</option>
+								<option value="list sample 3">현대</option>
+								<option value="list sample 4">현대</option>
+								<option value="list sample 5">현대</option>
+							</select>
+						</div>
+					</div>
+					<div class="row_group">
+						<p class="title">차량 모델</p>
+						<div class="select_wrap">
+							<select data-msg="모델선택을 해주세요." data-title="차량 모델 선택"><!-- data-title값을 titSelect에 넣어줌 -->
+								<option value="list sample 1">아이오닉5</option>
+								<option value="list sample 2">아이오닉5</option>
+								<option value="list sample 3">아이오닉5</option>
+								<option value="list sample 4">아이오닉5</option>
+								<option value="list sample 5">아이오닉5</option>
+							</select>
+						</div>
+					</div>
+					<div class="row_group">
+						<div class="inp_sel">
+							<label for="text1">이름(한글)</label>
+							<input type="text" id="text1" placeholder="텍스트 입력">
+						</div>
+					</div>
+				</div>
+				<div class="btn_group">
+					<button type="button" class="btn_basic btn_gray"><span>취소</span></button>
+					<button type="button" class="btn_basic"><span>가입완료</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -95,7 +95,8 @@ input::placeholder{color:#999;font-family:"Pretendard"}
 
 .inp_mix{margin:0 -3.5px}
 .inp_mix label,
-.inp_email label{font-size:13px;line-height:21px;display:block;margin-bottom:5px;padding-left:3.5px}
+.inp_email label{font-size:13px;font-weight:500;line-height:21px;display:block;margin-bottom:5px;/*padding-left:3.5px*/}
+.inp_mix label{padding-left:3.5px}
 .inp_mix .inp_sel{margin:0 3.5px}
 
 .inp_email .inp_group{background:#fff;border-radius:10px}
@@ -133,7 +134,7 @@ input::placeholder{color:#999;font-family:"Pretendard"}
 .qna_list .a{background:#e24f39}
 
 /* selectbox */
-.select_wrap .ui-selectmenu-button{position:relative;display:block;width:100%;height:46px;padding:12px 30px 12px 20px;border-radius:10px;text-align:left;background:#fff}
+.select_wrap .ui-selectmenu-button{position:relative;display:block;width:100%;height:46px;padding:12px 30px 12px 15px;border-radius:10px;text-align:left;background:#fff}
 .select_wrap .ui-selectmenu-button.custom-customSelect-disabled{background:#e0e0e6}
 .select_wrap .ui-selectmenu-button.custom-customSelect-disabled span{color:#6d6d6d}
 .select_wrap .ui-selectmenu-button span{overflow:hidden;text-overflow:ellipsis;display:block;color:#202020;white-space:nowrap;font-size:14px}
@@ -152,7 +153,7 @@ input::placeholder{color:#999;font-family:"Pretendard"}
 .step_list{display:inline-block;font-size:0}
 .step_list li{display:inline-block;width:22px;height:22px;color:#a6acb1;background:#fff;text-align:center;line-height:22px;border-radius:50%;font-size:11px}
 .step_list li ~ li{margin-left:6px}
-.step_list li.on{color:#fff;background:#e24f39}
+.step_list li.on{color:#fff;background:#e24f39;box-shadow:3px 3px 5px rgba(0, 0, 0, 0.2)}
 
 /* alert */
 .alert_wrap{overflow:hidden;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:999;border-radius:20px;width:calc(100% - 72px)}

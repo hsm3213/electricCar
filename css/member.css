@@ -1,5 +1,5 @@
 /* member01 로그인 */
-.login_logo{margin:20px 0 50px}
+.login_logo{margin:45px 0 50px}
 .login_logo .sample{width:130px;height:29px;margin:0 auto;background:#000}
 
 .inp_area .inp_sel:not(:first-of-type){margin-top:8px}
@@ -7,7 +7,7 @@
 .chk_area .inp_sel{display:inline-block}
 .chk_area .inp_sel:not(:first-of-type){margin-left:16px}
 
-.member .btn_group{margin-top:35px}
+.member .btn_group{margin-top:25px}
 
 .list_findInfo{display:flex;justify-content:center;margin-top:30px}
 .list_findInfo li{position:relative}
@@ -15,9 +15,11 @@
 .list_findInfo li:not(:first-of-type)::before{content:'';display:inline-block;position:absolute;left:12px;top:4px;width:1px;height:14px;background:#C0C6C9}
 /* // member01 로그인 */
 
-.tab_body{margin-top:30px;/*;padding:0 30px*/}
+/* member02 아이디/비밀번호 찾기 */
+.tab_body{margin-top:28px;/*;padding:0 30px*/}
 .tab_area.fixed + .tab_body{padding-top:60px}
-.tab_body .inp_field:not(:first-of-type){margin-top:18px}
+.tab_body > [class^="inp_"]:not(:first-of-type){margin-top:19px}
+.tab_body .btn_group{margin-top:40px}
 .tab_cont{display:none}
 .tab_cont.on{display:block}
 .tab_cont .inp_box{display:flex;width:100%}
@@ -26,12 +28,61 @@
 .tab_cont .inp_box .select_wrap{flex:0 0 130px;width:130px;margin-top:27px}
 .tab_cont .inp_box .select_wrap .ui-selectmenu-button{border-top-left-radius:0;border-bottom-left-radius:0}
 .tab_cont .select_box .title{font-size:13px;font-weight:500;margin-bottom:5px}
-/* .tab_cont .select_box .select_cont{display:flex;width:100%}
-.tab_cont .select_box .select_cont .select_wrap{flex:0 0 33.33%;width:33.33%}
-.tab_cont .select_box .select_cont .select_wrap:not(:first-of-type){margin-left:6px} */
-.tab_cont .inp_field:not(:first-of-type){margin-top:18px}
-.tab_cont .btn_group{margin-top:40px}
+.tab_cont .inp_email:not(:first-of-type){margin-top:18px}
 
-.txt_notice{margin-top:15px}
+.txt_notice{margin-top:13px}
 .txt_notice p{position:relative;padding-left:10px;color:#83858E;font-size:13px;line-height:21px}
 .txt_notice p::before{content:'※';display:inline-block;position:absolute;left:0;top:0}
+/* // member02 아이디/비밀번호 찾기 */
+
+/* member04 회원가입 */
+/* 본인인증 */
+.step_wrap{display:flex;justify-content:space-between;align-items:center;margin-top:30px}
+.step_wrap .title{font-size:28px;font-weight:700;line-height:36px}
+.join_wrap{margin-top:30px}
+.join_wrap .join_desc{color:#6B747D;font-size:16px;line-height:24px}
+.certify_list{margin-top:30px}
+.certify_list li:not(:first-of-type){margin-top:17px}
+.certify_list .box{display:block;position:relative;padding:19px 16px 22px 89px}
+.certify_list li a::before{content:'';display:inline-block;position:absolute;left:25px;top:27px;width:46px;height:46px;background:url(../img/sprite_join.png) no-repeat;background-size:auto 46px;}
+.certify_list li:nth-child(1) a::before{background-position:0 0}
+.certify_list li:nth-child(2) a::before{background-position:-51px 0}
+.certify_list li:nth-child(3) a::before{background-position:-102px 0}
+.certify_list a p{font-size:16px;font-weight:500;line-height:24px}
+.certify_list a span{display:block;color:#9698A3;font-size:11px;line-height:17px}
+.join_wrap .btn_group{margin-top:40px}
+/* // 본인인증 */
+
+/* 약관동의 */
+.terms_cont{margin-top:30px}
+.terms_cont .inp_sel label{margin:0}
+.terms_list{margin:30px 10px 0}
+.terms_list li:not(:first-of-type){margin-top:20px}
+/* // 약관동의 */
+
+/* 회원정보 */
+.join_box{margin-top:30px}
+.join_box.car{margin-top:41px}
+.join_box .join_title{margin-bottom:20px;padding-bottom:8px;border-bottom:1px solid #CED3D9;font-size:18px;font-weight:600;line-height:24px}
+.join_box .row_group:not(:first-of-type){margin-top:30px}
+.join_box.car .row_group:not(:first-of-type){margin-top:20px}
+.join_box .row_group > [class^="inp_"]:not(:first-of-type){margin-top:20px}
+.join_box .row_group input[type="text"]:not(:first-of-type), .join_box .row_group input[type="password"]:not(:first-of-type){margin-top:8px}
+.join_box .row_group .inp_rdo + .inp_rdo{margin-top:27px}
+.join_box .row_group .title{margin-bottom:4px}
+.inp_rdo .title, .save_card_wrap .title{margin-bottom:11px;font-size:13px;font-weight:500}
+.save_card_wrap .title{margin-bottom:4px}
+.save_card_wrap .save_card{padding:30px 22px 21px;border-radius:20px;background:#fff;text-align:center}
+.save_card_wrap .save_card p{color:#6B747D;font-size:13px;line-height:21px}
+.save_card_wrap .save_card .btn_group{margin-top:24px}
+.inp_rdo .inp_sel{display:inline-block}
+.inp_rdo .inp_sel:not(:first-of-type){margin-left:30px}
+/* // 회원정보 */
+/* 회원가입 완료 */
+.complete_wrap .complete_desc{margin:173px 0 227px;text-align:center}
+.complete_wrap .complete_desc::before{content:'';display:inline-block;width:61px;height:57px;background:url(../img/ic_join_complete.png) no-repeat;background-size:61px auto}
+.complete_wrap .complete_desc p{margin-top:10px;font-size:28px;line-height:36px}
+.complete_wrap .complete_desc span{margin-top:1px;color:#868E96;font-size:16px;line-height:24px}
+.complete_wrap .btn_group{width:100%;margin:0 -2px}
+/* // 회원가입 완료 */
+/* // member04 회원가입 */
