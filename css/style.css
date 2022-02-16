@@ -30,6 +30,7 @@ b{font-weight:600}
 
 .title_dep1{font-size:28px;font-weight:700;line-height:36px}
 .title_dep2{font-size:18px;font-weight:600;line-height:24px}
+.title_dep3{font-size:16px;line-height:24px}
 .point_color{color:#e24f39}
 
 /* button */
@@ -110,7 +111,7 @@ input::placeholder{color:#999;font-family:"Pretendard"}
 
 .inp_period .sel_period{display:none;margin-top:20px}
 .inp_period .inp_btn_gtoup{margin:0}
-.inp_period .inp_btn{flex:1;padding:0;border:1px solid #d1d7dd;margin:0;box-sizing:border-box}
+.inp_period .inp_btn{flex:1;padding:0;border:1px solid #d1d7dd;margin:0;box-sizing:border-box;background:#f2f4f5}
 .inp_period .inp_btn label{color:#6b747d;background:none;border-radius:0;height:40px;line-height:40px}
 .inp_period .inp_btn:nth-child(2),
 .inp_period .inp_btn:nth-child(3){margin:0 -1px}
@@ -136,7 +137,8 @@ input::placeholder{color:#999;font-family:"Pretendard"}
 .select_wrap .ui-selectmenu-button{position:relative;display:block;width:100%;height:46px;padding:12px 30px 12px 20px;border-radius:10px;text-align:left;background:#fff}
 .select_wrap .ui-selectmenu-button.custom-customSelect-disabled{background:#e0e0e6}
 .select_wrap .ui-selectmenu-button.custom-customSelect-disabled span{color:#6d6d6d}
-.select_wrap .ui-selectmenu-button span{overflow:hidden;text-overflow:ellipsis;display:block;color:#202020;white-space:nowrap;font-size:14px}
+.select_wrap .ui-selectmenu-button[aria-disabled="false"] span{color:#202020}
+.select_wrap .ui-selectmenu-button span{overflow:hidden;text-overflow:ellipsis;display:block;color:#999;white-space:nowrap;font-size:14px}
 .select_wrap .ui-selectmenu-button:after{content:"";display:block;position:absolute;top:50%;right:20px;width:7px;height:7px;margin-top:-7px;border:solid #333642;border-width:0 2px 2px 0;transform:rotate(45deg) skew(-2deg, -2deg)}
 .select_wrap .ui-selectmenu-menu{display:none;position:fixed;bottom:-100%;left:0 !important;right:0;padding:24px 0 0 0;border-radius:30px 30px 0 0;background:#f2f4f5;z-index:9000;z-index:10001}
 .select_wrap .ui-selectmenu-menu .tit_select{padding:0 60px 12px 30px;font-size:18px;font-weight:600}
@@ -175,12 +177,29 @@ input::placeholder{color:#999;font-family:"Pretendard"}
 .text_list li{display:flex;flex-wrap:wrap;line-height:28px}
 .text_list li .title{width:102px;padding-left:8px;box-sizing:border-box;font-size:13px;font-weight:600}
 .text_list li .text{font-size:13px;color:#6b747d;width:calc(100% - 102px)}
+
 .text_list.type_right li{line-height:26px}
 .text_list.type_right li .title{font-size:14px}
-.text_list.type_right li .text{text-align:right;color:#333642;font-size:14px;padding-right:10px}
+.text_list.type_right li .text{text-align:right;color:#333642;padding-right:10px}
+
+.text_list.type_box{border-radius:10px;background:#fff;padding:0 10px;border:0}
+.text_list.type_box li{line-height:22px;padding:13px 10px;font-size:14px}
+.text_list.type_box li > *{font-size:14px}
+.text_list.type_box li em{padding-left:0}
+.text_list.type_box li .text{text-align:right}
+.text_list.type_box li ~ li{border-top:1px solid #d1d7dd}
 
 .blick_list li{font-size:13px;color:#83858e;line-height:21px;position:relative;padding-left:13px}
 .blick_list li:before{content:"※";display:inline-block;position:absolute;left:0;top:-1px}
+
+.tbl_list ul{border-top:1px solid #d1d7dd;margin-top:10px}
+.tbl_list li{display:flex;flex-wrap:wrap;padding:16px 0;border-bottom:1px solid #d1d7dd}
+.tbl_list li > *{flex:1}
+.tbl_list li .date{flex:0 0 63px;text-align:center;font-size:12px;color:#9698a3}
+.tbl_list li .context em{display:block;font-size:16px;font-weight:600;line-height:24px}
+.tbl_list li .context .list span{display:inline-block;font-size:14px}
+.tbl_list li .context .list span ~ span{margin-left:10px}
+.tbl_list li .price{flex:0 0 99px;text-align:center;font-size:16px;font-weight:600;color:#394c79}
 
 /* tab */
 .tab_area{position:relative;border-bottom:1px solid #d1d7dd;box-sizing:border-box;margin:0 -25px}
@@ -208,11 +227,14 @@ input::placeholder{color:#999;font-family:"Pretendard"}
 /* table */
 .tbl_area .tbl_info{font-size:12px;line-height:20px;margin-bottom:10px;color:#6b747d}
 .tbl_area table{width:100%;border-top:1px solid #d1d7dd}
-.tbl_area thead th{border-bottom:1px solid #d1d7dd;text-align:center;padding:16px 0;font-size:14px;line-height:22px}
-.tbl_area tbody th{font-weight:600;font-size:14px;padding:10px 0 40px;text-align:left;padding:16px 0;border-bottom:1px solid #d1d7dd}
+.tbl_area thead th{border-bottom:1px solid #d1d7dd;text-align:center;padding:10px 0;font-size:13px;line-height:21px;color:#6b747d;font-weight:400}
+.tbl_area tbody th{font-size:14px;padding:10px 0;border-bottom:1px solid #d1d7dd;line-height:22px;font-weight:400}
 .tbl_area tbody th a{color:#333642}
-.tbl_area tbody td{padding:16px 0;border-bottom:1px solid #d1d7dd;color:#6b747d}
+.tbl_area tbody td{padding:10px 0;border-bottom:1px solid #d1d7dd}
 .tbl_area tbody td.tc{text-align:center}
+.tbl_area.board_type thead th{font-size:14px;line-height:22px;color:#333642}
+.tbl_area.board_type tbody th{font-weight:600;text-align:left;padding:16px 0}
+.tbl_area.board_type tbody td{padding:16px 0;color:#6b747d}
 
 /* none */
 .data_none{position:relative;text-align:center;padding-top:220px}
@@ -235,3 +257,16 @@ input::placeholder{color:#999;font-family:"Pretendard"}
 /* flag */
 .flag .flag_item{display:inline-block;width:72px;height:28px;text-align:center;line-height:28px;border-radius:50px;font-size:14px;color:#fff;font-weight:500;background:#394c79}
 .flag .flag_item.bg_orange{background:#e24f39}
+
+/* form table */
+.tbl_form{background:#fff;border-radius:10px;padding:0 10px}
+.tbl_form > [class^="title"]{padding:12px 0 12px 5px}
+.tbl_form .form_list li{display:flex;flex-wrap:wrap;border-top:1px solid #d1d7dd;padding:11px 5px}
+.tbl_form .form_list li > *{flex:1}
+.tbl_form .form_list li .title{flex:0 0 92px;line-height:28px}
+.tbl_form .form_list li .context{line-height:28px;color:#6b747d}
+.tbl_form .form_list li .btn{flex:0 0 60px}
+.tbl_form .form_list li .tbl_btn{display:inline-block;width:60px;border-radius:50px;height:28px;line-height:28px;color:#fff;background:#394c79;font-weight:500;text-align:center}
+.tbl_form .form_list li .select_wrap{flex:0 0 85px}
+.tbl_form .form_list li .select_wrap .ui-selectmenu-button{height:28px;padding:0 20px 0 0;line-height:28px;text-align:center}
+.tbl_form .form_list li .select_wrap .ui-selectmenu-button:after{right:5px}

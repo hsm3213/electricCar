@@ -46,7 +46,7 @@
 
     .section h1{padding:10px 0}
     .group{padding:10px 0}
-    .group a{font-size:16px}
+    /* .group a{font-size:16px} */
     html{background:#f2f4f5}
 
     .section.tab{min-height:1100px}
@@ -178,6 +178,7 @@
         <div class="description">heading태그(&lt;h1~~>)는 순서에 맞게 사용 하단 가이드는 클래스만 사용</div>
         <h2 class="title_dep1">28px weight 700 타이틀</h2>
         <h3 class="title_dep2">18px weight 600 타이틀</h3>
+        <h4 class="title_dep3">16px weight 400 타이틀</h4>
         
         <h1>텍스트</h1>
         <div class="group">
@@ -327,6 +328,14 @@
             </div>
         </div>
         <div class="group">
+            <div class="inp_group">
+                <div class="inp_sel">
+                    <input type="text" placeholder="텍스트 입력">
+                </div>
+                <button type="button" class="inp_btn">검색<span></span></button>
+            </div>
+        </div>
+        <div class="group">
             <div class="inp_sel">
                 <label for="text1">이름(한글)</label>
                 <input type="text" id="text1" placeholder="텍스트 입력">
@@ -471,7 +480,7 @@
     <div class="section board">
         <h1>리스트 테이블형</h1>
         <div class="group">
-            <div class="tbl_area">
+            <div class="tbl_area board_type">
                 <p class="tbl_info">총 <b class="point_color">10</b>건의 게시물이 있습니다.</p>
                 <table class="tbl_h">
                     <colgroup>
@@ -537,7 +546,6 @@
     </div>
     <!-- //팝업 -->
 
-
     <!-- 컴포넌트 -->
     <div class="section component">
         <h1>스텝</h1>
@@ -580,6 +588,22 @@
                 <li>
                     <em class="title">타이틀</em>
                     <span class="text">내용 내용 내용 내용 내용 내용</span>
+                </li>
+            </ul>
+        </div>
+        <div class="group">
+            <ul class="text_list type_box">
+                <li>
+                    <em class="title">충전</em>
+                    <span class="text"><b class="point_color">5회</b></span>
+                </li>
+                <li>
+                    <em class="title">충전량</em>
+                    <span class="text"><b class="point_color">270kwh</b></span>
+                </li>
+                <li>
+                    <em class="title">총 충전금액</em>
+                    <span class="text"><b class="point_color">75,000원</b></span>
                 </li>
             </ul>
         </div>
@@ -633,6 +657,122 @@
             <div class="data_none">
                 <p>검색어와 일치하는 결과가 없습니다.</p>
                 <span class="desc">다른 검색어를 입력해주세요.</span>
+            </div>
+        </div>
+        
+        <h1>결제내역 리스트</h1>
+        <div class="group">
+            <div class="tbl_list">
+                <div class="title_dep3">2022년 2월 결제내역</div>
+                <ul>
+                    <li>
+                        <span class="date">02.04</span>
+                        <div class="context">
+                            <em>금액 충전</em>
+                            <div class="info">
+                                <span>11:13</span>
+                                <span>결제</span>
+                            </div>
+                        </div>
+                        <span class="price">30,000원</span>
+                    </li>
+                    <li>
+                        <span class="date">02.04</span>
+                        <div class="context">
+                            <em>금액 충전</em>
+                            <div class="info">
+                                <span>11:13</span>
+                                <span>결제</span>
+                            </div>
+                        </div>
+                        <span class="price">30,000원</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h1>테이블</h1>
+        <div class="group">
+            <div class="tbl_area">
+                <p class="tbl_info">총 <b class="point_color">10</b>건의 게시물이 있습니다.</p>
+                <table class="tbl_h">
+                    <colgroup>
+                        <col>
+                        <col style="width:75px">
+                        <col style="width:65px">
+                        <col style="width:90px">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">충전소명</th>
+                            <th scope="col">충전요금</th>
+                            <th scope="col">충전량</th>
+                            <th scope="col">충전일자</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">이마트 성수점</th>
+                            <td class="tc">13,000원</td>
+                            <td class="tc">50kwh</td>
+                            <td class="tc">2022.02.12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이마트 성수점</th>
+                            <td class="tc">13,000원</td>
+                            <td class="tc">50kwh</td>
+                            <td class="tc">2022.02.12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이마트 성수점</th>
+                            <td class="tc">13,000원</td>
+                            <td class="tc">50kwh</td>
+                            <td class="tc">2022.02.12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이마트 성수점</th>
+                            <td class="tc">13,000원</td>
+                            <td class="tc">50kwh</td>
+                            <td class="tc">2022.02.12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이마트 성수점</th>
+                            <td class="tc">13,000원</td>
+                            <td class="tc">50kwh</td>
+                            <td class="tc">2022.02.12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h1>정보</h1>
+        <div class="group">
+            <div class="tbl_form">
+                <div class="title_dep3"><b>타이틀</b></div>
+                <ul class="form_list">
+                    <li>
+                        <em class="title">아이디</em>
+                        <div class="context">asdf@gmail.com</div>
+                    </li>
+                    <li>
+                        <em class="title">비밀번호</em>
+                        <div class="context">dkfksd</div>
+                        <div class="btn">
+                            <button class="tbl_btn" type="button"><span>변경</span></button>
+                        </div>
+                    </li>
+                    <li>
+                        <em class="title">차량 제조사</em>
+                        <div class="context">현대자동차</div>
+                        <div class="select_wrap">
+                            <select id="tel" data-msg="차량선택" data-title="차량선택"><!-- data-title값을 titSelect에 넣어줌 -->
+                                <option value="list sample 1">차량선택1</option>
+                                <option value="list sample 2">차량선택2</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
