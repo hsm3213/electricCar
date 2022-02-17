@@ -33,6 +33,8 @@ b{font-weight:600}
 .title_dep3{font-size:16px;line-height:24px}
 .point_color{color:#e24f39}
 
+.info_text{font-size:12px;color:#6b747d}
+
 /* button */
 .btn_group{display:flex;margin:0 -4.5px}
 .btn_group a,
@@ -46,7 +48,8 @@ b{font-weight:600}
 .btn_md{height:36px;line-height:36px;font-size:12px;border-radius:30px}
 
 /* input */
-input::placeholder{color:#999;font-family:"Pretendard"}
+input::placeholder,
+textarea::placeholder{color:#999;font-family:"Pretendard"}
 .inp_sel{position:relative;font-size:0}
 .inp_sel input[type="checkbox"],
 .inp_sel input[type="radio"]{opacity:0;position:absolute;top:0;left:0}
@@ -74,6 +77,8 @@ input::placeholder{color:#999;font-family:"Pretendard"}
 .inp_sel.error .inp_text{color:#e24f39}
 .inp_sel input[type="text"]:disabled{border:1px solid #ced3d9;color:#868e96;background:#f2f4f5}
 
+.textarea{display:block;resize:none;width:100%;min-height:196px;line-height:22px;padding:12px 20px;box-sizing:border-box;border:0;border-radius:10px;font-size:14px}
+
 .inp_sel .accordion_wrap{display:inline-block;width:calc(100% - 30px);vertical-align:top}
 
 .inp_swich{position:relative;width:50px;height:28px;}
@@ -96,9 +101,12 @@ input::placeholder{color:#999;font-family:"Pretendard"}
 
 .inp_mix{margin:0 -3.5px}
 .inp_mix label,
+.inp_mix .label,
 .inp_email label{font-size:13px;font-weight:500;line-height:21px;display:block;margin-bottom:5px;/*padding-left:3.5px*/}
 .inp_mix label{padding-left:3.5px}
 .inp_mix .inp_sel{margin:0 3.5px}
+.inp_mix .info_text{margin-top:16px}
+.inp_mix .attach_wrap label{padding:0;margin-bottom:0}
 
 .inp_email .inp_group{background:#fff;border-radius:10px}
 .inp_email .select_wrap .ui-selectmenu-button{padding-left:12px}
@@ -236,6 +244,7 @@ input::placeholder{color:#999;font-family:"Pretendard"}
 .tbl_area.board_type thead th{font-size:14px;line-height:22px;color:#333642}
 .tbl_area.board_type tbody th{font-weight:600;text-align:left;padding:16px 0}
 .tbl_area.board_type tbody td{padding:16px 0;color:#6b747d}
+.tbl_area .flag span{font-size:12px;font-weight:400}
 
 /* none */
 .data_none{position:relative;text-align:center;padding-top:220px}
@@ -258,6 +267,7 @@ input::placeholder{color:#999;font-family:"Pretendard"}
 /* flag */
 .flag .flag_item{display:inline-block;width:72px;height:28px;text-align:center;line-height:28px;border-radius:50px;font-size:14px;color:#fff;font-weight:500;background:#394c79}
 .flag .flag_item.bg_orange{background:#e24f39}
+.flag .flag_item.bg_gray{background:#9698a3}
 
 /* form table */
 .tbl_form{background:#fff;border-radius:10px;padding:0 10px}
@@ -276,3 +286,20 @@ input::placeholder{color:#999;font-family:"Pretendard"}
 .toast_popup{position:absolute;bottom:-36px;left:50%;transform:translateX(-50%);transition:all ease .5s 0s;opacity:0}
 .toast_popup.on{bottom:70px;opacity:1}
 .toast_popup p{height:36px;line-height:36px;padding:0 25px;font-size:13px;color:#fff;background:#333642;border-radius:20px;white-space:nowrap}
+
+/* attach */
+.inp_attach{position:relative;padding-top:100%}
+.inp_attach input{opacity:0;width:0;height:0;position:absolute;top:0;left:0;z-index:-1}
+.inp_attach label{position:absolute;top:0;left:0;width:100%;height:100%}
+.inp_attach label:before{content:"";width:24px;height:1.5px;background:#c9cbd4;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+.inp_attach label:after{content:"";height:24px;width:1.5px;background:#c9cbd4;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+.attach_wrap{display:flex;margin:0 -4px}
+.attach_wrap .attach_item{flex:1;margin:0 4px;position:relative;border-radius:10px;background:#fff;overflow:hidden}
+.attach_wrap .attach_item.add_file .inp_attach{display:none}
+.attach_wrap .attach_item.add_file .attach_file{display:block}
+.attach_wrap .attach_file{display:none;position:absolute;top:0;left:0;width:100%;height:100%}
+.attach_wrap .attach_file figure{display:block}
+.attach_wrap .attach_file figure img{display:block;width:100%}
+.attach_wrap .attach_file .btn_del{position:absolute;top:4px;right:4px;width:14px;height:14px;border-radius:50%;background:#fff}
+.attach_wrap .attach_file .btn_del:before{content:"";position:absolute;top:5x;left:2px;transform:rotate(45deg);width:10px;height:1px;background:#9698a3}
+.attach_wrap .attach_file .btn_del:after{content:"";position:absolute;top:5x;left:2px;transform:rotate(-45deg);width:10px;height:1px;background:#9698a3}
