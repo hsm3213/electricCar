@@ -224,6 +224,7 @@ function period(){
     })
 }
 
+//토스트 팝업
 function toastPopup(){
     $('.click_toast').on('click',function(){
         var toastName = $(this).attr('data-popup');
