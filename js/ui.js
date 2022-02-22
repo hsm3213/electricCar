@@ -235,6 +235,14 @@ function toastPopup(){
     })
 }
 
+//드래그바
+function dragbar(){
+    $('input[type=range]')
+        .rangeslider({
+        polyfill: false
+    })
+}
+
 //jquery
 $(function(){
     // scrollDock();
@@ -249,4 +257,5 @@ $(function(){
     }
     if($('.inp_period').length > 0){period();}
     if($('.click_toast').length > 0){toastPopup();}
+    if($('.dragbar').length > 0){dragbar();}
 });

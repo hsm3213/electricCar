@@ -204,11 +204,19 @@ textarea::placeholder{color:#999;font-family:"Pretendard"}
 .tbl_list ul{border-top:1px solid #d1d7dd;margin-top:10px}
 .tbl_list li{display:flex;flex-wrap:wrap;padding:16px 0;border-bottom:1px solid #d1d7dd}
 .tbl_list li > *{flex:1}
-.tbl_list li .date{flex:0 0 63px;text-align:center;font-size:12px;color:#9698a3}
+.tbl_list li .charge{flex:0 0 100px;font-size:16px;color:#333642;line-height:20px}
+.tbl_list li .charge .payment{position:relative;line-height:24px}
+.tbl_list li .charge .payment:before{display:inline-block;content:"+";width:14px;height:14px;border-radius:50%;background:#333642;line-height:14px;margin-right:4px;color:#fff;font-weight:400;font-size:13px;text-align:center;vertical-align:2px}
+.tbl_list li .charge .info_text{display:block;padding-left:18px;line-height:20px}
+.tbl_list li .charge .cancel{position:relative;color:#e24f39}
+.tbl_list li .charge .cancel:before{display:inline-block;content:"-";width:14px;height:14px;border-radius:50%;background:#e24f39;line-height:14px;margin-right:4px;color:#fff;font-weight:400;font-size:13px;text-align:center;vertical-align:1px}
+.tbl_list li .charge .cancel .info_text{color:#e24f39}
+.tbl_list li .context{padding-left:11px}
 .tbl_list li .context em{display:block;font-size:16px;font-weight:600;line-height:24px}
-.tbl_list li .context .list span{display:inline-block;font-size:14px}
-.tbl_list li .context .list span ~ span{margin-left:10px}
-.tbl_list li .price{flex:0 0 99px;text-align:center;font-size:16px;font-weight:600;color:#394c79}
+.tbl_list li .context .charge_time{display:block;font-size:12px;color:#9698a3;font-weight:400;line-height:20px}
+.tbl_list li .info{flex:0 0 76px;text-align:right;font-size:12px;color:#9698a3;line-height:20px}
+.tbl_list li .date{display:block}
+.tbl_list li .receipt{color:#6b747e;border-bottom:1px solid #6b747e}
 
 /* tab */
 .tab_area{position:relative;border-bottom:1px solid #d1d7dd;box-sizing:border-box;margin:0 -25px}
@@ -272,15 +280,15 @@ textarea::placeholder{color:#999;font-family:"Pretendard"}
 /* form table */
 .tbl_form{background:#fff;border-radius:10px;padding:0 10px}
 .tbl_form > [class^="title"]{padding:12px 0 12px 5px}
-.tbl_form .form_list li{display:flex;flex-wrap:wrap;border-top:1px solid #d1d7dd;padding:11px 5px}
-.tbl_form .form_list li > *{flex:1}
-.tbl_form .form_list li .title{flex:0 0 92px;line-height:28px}
-.tbl_form .form_list li .context{line-height:28px;color:#6b747d}
-.tbl_form .form_list li .btn{flex:0 0 60px}
-.tbl_form .form_list li .tbl_btn{display:inline-block;width:60px;border-radius:50px;height:28px;line-height:28px;color:#fff;background:#394c79;font-weight:500;text-align:center}
-.tbl_form .form_list li .select_wrap{flex:0 0 85px}
-.tbl_form .form_list li .select_wrap .ui-selectmenu-button{height:28px;padding:0 20px 0 0;line-height:28px;text-align:center}
-.tbl_form .form_list li .select_wrap .ui-selectmenu-button:after{right:5px}
+.tbl_form .form_list > li{display:flex;flex-wrap:wrap;border-top:1px solid #d1d7dd;padding:11px 5px}
+.tbl_form .form_list > li > *{flex:1}
+.tbl_form .form_list > li .title{flex:0 0 92px;line-height:28px}
+.tbl_form .form_list > li .context{line-height:28px;color:#6b747d}
+.tbl_form .form_list > li .btn{flex:0 0 60px}
+.tbl_form .form_list > li .tbl_btn{display:inline-block;width:60px;border-radius:50px;height:28px;line-height:28px;color:#fff;background:#394c79;font-weight:500;text-align:center}
+.tbl_form .form_list > li .select_wrap{flex:0 0 85px}
+.tbl_form .form_list > li .select_wrap .ui-selectmenu-button{height:28px;padding:0 20px 0 0;line-height:28px;text-align:center}
+.tbl_form .form_list > li .select_wrap .ui-selectmenu-button:after{right:5px}
 
 /* toast popup */
 .toast_popup{position:absolute;bottom:-36px;left:50%;transform:translateX(-50%);transition:all ease .5s 0s;opacity:0}
@@ -305,15 +313,10 @@ textarea::placeholder{color:#999;font-family:"Pretendard"}
 .attach_wrap .attach_file .btn_del:after{content:"";position:absolute;top:5x;left:2px;transform:rotate(-45deg);width:10px;height:1px;background:#9698a3}
 
 /* dragbar */
-/* .drag_area .ui-slider{position:relative;background:#e6e7ed;width:100%;height:4px;border-radius:5px}
-.drag_area .ui-slider-handle{width:23px;height:23px;background:rgba(226,78,57,.4);border-radius:50%;position:absolute;margin-left:-11.5px;top:-9.5px}
-.drag_area .ui-slider-handle:after{content:"";width:9px;height:9px;background:#e24f39;opacity:1;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
-.drag_area .ui-slider-range-min{position:absolute;top:0;left:0;background:#e24f39;height:4px;border-radius:5px}
-
-.drag_bar input[type="range"]{position:relative;width:100%;height:4px;border-radius:5px;background:#e6e7ed;border:0;color:#e6e7ed;-webkit-appearance:none;outline:none}
-.drag_bar input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;border-radius:50%;width:23px;height:23px;background:rgba(226,78,57,.4);border-radius:50%} */
-/* .drag_bar input[type="range"]::-webkit-slider-thumb::after{content:"";width:9px;height:9px;background:#e24f39;opacity:1;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)} */
-/* .drag_bar input[type="range"]{outline:0;border:0;border-radius:5px;width:100%;height:4px;-webkit-appearance:none;background-color:#e6e7ed}
-.drag_bar input[type="range"]::-webkit-slider-runnable-track{height:23px;-webkit-appearance:none}
-.drag_bar input[type="range"]::-webkit-slider-thumb{width:9px;-webkit-appearance:none;height:9px;cursor:ew-resize;background:#e24f39;border-radius:50%;transition:box-shadow 0.2s ease-in-out;position:relative;box-shadow:0 0 0 8px rgba(226,78,57,.4);margin-top:-2.5px}box-shadow:0 0 0 8px rgba(226,78,57,.4); */
- 
+.rangeslider{background:#e6e7ed;position:relative}
+.rangeslider--horizontal{height:4px;width:100%;border-radius:5px}
+.rangeslider__fill{ background:#e24f39;position:absolute;border-radius:5px}
+.rangeslider--horizontal .rangeslider__fill{top:0;height:100%}
+.rangeslider__handle{cursor:pointer;display:inline-block;width:23px;height:23px;background:rgba(226,78,57,.4);border-radius:50%;position:absolute;border-radius:50%;margin-top:1px}
+.rangeslider__handle:after{content:"";width:9px;height:9px;background:#e24f39;opacity:1;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+.rangeslider--horizontal .rangeslider__handle{top:-10px;touch-action:pan-y;-ms-touch-action:pan-y}
