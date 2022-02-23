@@ -11,6 +11,12 @@
 #header .page_title{padding:0 60px;text-align:center;font-size:18px;font-weight:600;height:60px;line-height:60px}
 #header .ic_back{position:absolute;top:17px;left:19px}
 #header .ic_home{position:absolute;top:17px;right:23px}
+#header .ic_refresh{position:absolute;top:17px;right:23px}
+
+.ic_qr{width:36px;height:36px;background:url(../img/sprite_menu.png) no-repeat 0 -41px/250px auto}
+.ic_menu{width:36px;height:36px;background:url(../img/sprite_menu.png) no-repeat 0 0/250px auto}
+.ic_home{width:26px;height:26px;background:url(../img/ico_home.png) no-repeat 0 0/100% auto}
+.ic_refresh{width:26px;height:26px;background:url(../img/ico_refresh.png) no-repeat 0 0/100% auto}
 
 .content{padding:0 25px 50px}
 .content.member{padding:0 30px 50px}
@@ -330,6 +336,11 @@ textarea::placeholder{color:#999;font-family:"Pretendard"}
 .dragbar [type="range"]::-webkit-slider-runnable-track{background:transparent}
 .dragbar [type="range"]::-webkit-slider-thumb{position:relative;appearance:none;width:24px;height:24px;border-radius:50%;background:#e24f39;cursor:pointer;border:none}
 
+/* bottom_popup */
+.bottom_popup{position:absolute;left:0;bottom:-100%;width:100%;border-radius:20px 20px 0 0;background:#f2f4f5;transition:all ease .2s 0s;box-shadow:-20px 0px 20px rgba(0, 0, 0, 0.12)}
+.bottom_popup.on{bottom:0;transition:all ease .2s 0s;z-index:999}
+.bottom_popup.on ~ .dimmed{display:block}
+
 /* customer */
 .notice_list{padding-top:30px}
 .tab_area.fixed ~ .notice_list{padding-top:90px}
@@ -373,12 +384,12 @@ textarea::placeholder{color:#999;font-family:"Pretendard"}
 .charge_store .charge_info p:before{content:"";position:absolute;top:3px;left:-9px;width:1px;height:13px;background:#cacfd3}
 .charge_store .btn_group{margin-top:20px}
 
-.search_data_none{position:absolute;left:0;bottom:-100%;width:100%;height:251px;border-radius:20px 20px 0 0;background:#f2f4f5;transition:all ease .2s 0s;box-shadow:-20px 0px 20px rgba(0, 0, 0, 0.12)}
-.search_data_none.on{bottom:0;transition:all ease .2s 0s}
+.search_data_none{height:251px;}
 .search_data_none .data_none{padding-top:118px}
 .search_data_none .data_none p{font-size:18px}
 .search_data_none .data_none .desc{margin-top:5px}
 .search_data_none .close{position:absolute;top:22px;right:27px;width:26px;height:26px;background:url(../img/ic_close.png) no-repeat 0 0/26px auto}
+
 
 /* dummy */
 .map_area .pin{position:absolute;top:30%;left:20%;width:54px;height:63px;background:url(../img/pin.png) no-repeat 0 0/54px auto}

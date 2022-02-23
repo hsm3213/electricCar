@@ -237,9 +237,6 @@ function toastPopup(){
 
 //드래그바
 function dragbar(){
-	// $('input[type=range]').rangeslider({
-	//     polyfill: false
-	// });
 	const RangeSlider = (function() {
 		var elRangeInputs = document.querySelectorAll(".dragbar");
 
@@ -293,6 +290,13 @@ function imgUpload(){
 	});
 }
 
+//하단 팝업
+function bottomPopup(){
+    $('.bottom_popup .close').on('click',function(){
+        $('.bottom_popup').removeClass('on');
+    })
+}
+
 //jquery
 $(function(){
 	// scrollDock();
@@ -308,4 +312,5 @@ $(function(){
 	if($('.inp_period').length > 0){period();}
 	if($('.click_toast').length > 0){toastPopup();}
 	if($('.dragbar').length > 0){dragbar();}
+	if($('.bottom_popup').length > 0){bottomPopup();}
 });

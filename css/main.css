@@ -13,9 +13,6 @@ html{height:100vh;background:var(--background)}
 .main_header{display:flex;justify-content:space-between;align-items:center;position:relative;height:70px;padding:0 18px 0 25px}
 .sec_logo a{display:block;width:88px;height:20px;background:#000}
 .main_header .btn_area button:not(:first-of-type){margin-left:1px}
-.ic_qr{width:36px;height:36px;background:url(../img/sprite_menu.png) no-repeat 0 -41px/250px auto}
-.ic_menu{width:36px;height:36px;background:url(../img/sprite_menu.png) no-repeat 0 0/250px auto}
-.ic_home{width:26px;height:26px;background:url(../img/ico_home.png) no-repeat 0 0/100% auto}
 
 .title_main{padding:13px 25px 0;font-size:18px;font-weight:400}
 .title_main .btn_text01{font-weight:600}
@@ -128,7 +125,6 @@ html{height:100vh;background:var(--background)}
 .btn_text02{color:#83858e;font-size:12px;line-height:20px}
 .btn_text02::after{content:'';display:inline-block;width:13px;height:12px;vertical-align:-2px;margin-left:2px;background:url(../img/ic_link.png) no-repeat;background-size:13px auto}
 /* // 설정 */
-
 
 /* 팝업 */
 [class^='layer_popup']{overflow:hidden;position:fixed;top:100%;left:0;right:0;width:calc(100% - 60px);height:auto; margin:auto;border-radius:20px;z-index:2500;background:#fff;transition:all .3s linear;}
