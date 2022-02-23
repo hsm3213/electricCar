@@ -313,10 +313,8 @@ textarea::placeholder{color:#999;font-family:"Pretendard"}
 .attach_wrap .attach_file .btn_del:after{content:"";position:absolute;top:5x;left:2px;transform:rotate(-45deg);width:10px;height:1px;background:#9698a3}
 
 /* dragbar */
-.rangeslider{background:#e6e7ed;position:relative}
-.rangeslider--horizontal{height:4px;width:100%;border-radius:5px}
-.rangeslider__fill{ background:#e24f39;position:absolute;border-radius:5px}
-.rangeslider--horizontal .rangeslider__fill{top:0;height:100%}
-.rangeslider__handle{cursor:pointer;display:inline-block;width:23px;height:23px;background:rgba(226,78,57,.4);border-radius:50%;position:absolute;border-radius:50%;margin-top:1px}
-.rangeslider__handle:after{content:"";width:9px;height:9px;background:#e24f39;opacity:1;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
-.rangeslider--horizontal .rangeslider__handle{top:-10px;touch-action:pan-y;-ms-touch-action:pan-y}
+.dragbar{height:4px;width:100%;position:relative;border:none;border-radius:5px;margin:20px 0;appearance:none}
+.dragbar [type="range"]{appearance:none;background:transparent;width:100%;position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;height:30px}
+.dragbar [type="range"]:focus{outline:none}
+.dragbar [type="range"]::-webkit-slider-runnable-track{background:transparent}
+.dragbar [type="range"]::-webkit-slider-thumb{position:relative;appearance:none;width:24px;height:24px;border-radius:50%;background:#e24f39;cursor:pointer;border:none}

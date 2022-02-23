@@ -1,10 +1,12 @@
 :root[color-theme='light'] {
 	--background: #f2f4f5;
 	--actionBarBg:#fff;
+	--rangeBg:#e24f39;
 }
 :root[color-theme='dark'] {
 	--background: #000;
 	--actionBarBg:#000;
+	--rangeBg:#e24f39;
 }
 html{height:100vh;background:var(--background)}
 
