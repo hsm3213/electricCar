@@ -234,7 +234,7 @@ textarea::placeholder{color:#999;font-family:"Pretendard"}
 
 .box_type{margin:0;border:0}
 .box_type .tab_list{flex-wrap:wrap}
-.box_type .tab_list li{flex:0 0 calc(100%/3);border:1px solid #d1d7dd;height:48px;box-sizing:border-box}
+.box_type .tab_list li{flex:0 0 calc(100%/3);border:1px solid #d1d7dd;height:48px;box-sizing:border-box;background:#f2f4f5}
 .box_type .tab_list li a{font-size:14px;height:46px;line-height:46px}
 .box_type .tab_list li.on{background:#333642;border:1px solid #333642;z-index:10}
 .box_type .tab_list li.on a{color:#fff;font-weight:400}
