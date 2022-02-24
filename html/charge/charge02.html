@@ -27,7 +27,167 @@
     </header>
     <div id="container">
         <div class="content">
-            <div class="map_area">
+            <div class="charge_filter">
+                <div class="inp_sel">
+                    <label for="sel">지역선택</label>
+                    <div class="select_wrap">
+                        <select data-msg="시/도" data-title="시/도 선택" id="sel"><!-- data-title값을 titSelect에 넣어줌 -->
+                            <option value="list 1">서울특별시</option>
+                            <option value="list 2">경기도</option>
+                        </select>
+                    </div>
+                    <div class="select_wrap">
+                        <select data-msg="시/군/구" data-title="시/군/구 선택"><!-- data-title값을 titSelect에 넣어줌 -->
+                            <option value="list 1">고양시 덕양구</option>
+                            <option value="list 2">고양시 일산서구</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="inp_mix">
+                    <span class="label">충전속도</span>
+                    <div class="inp_btn_group">
+                        <div class="inp_btn">
+                            <input type="radio" id="rdo3-1" name="rdo3">
+                            <label for="rdo3-1"><span>급속</span></label>
+                        </div>
+                        <div class="inp_btn">
+                            <input type="radio" id="rdo3-2" name="rdo3">
+                            <label for="rdo3-2"><span>완속</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inp_mix">
+                    <span class="label">충전타입</span>
+                    <div class="inp_btn_group charge_type">
+                        <div class="inp_btn charge_type01">
+                            <input type="radio" id="rdo4-1" name="rdo4">
+                            <label for="rdo4-1"><span>전체</span></label>
+                        </div>
+                        <div class="inp_btn charge_type02">
+                            <input type="radio" id="rdo4-2" name="rdo4">
+                            <label for="rdo4-2"><span>TYP1</span></label>
+                        </div>
+                        <div class="inp_btn charge_type03">
+                            <input type="radio" id="rdo4-3" name="rdo4">
+                            <label for="rdo4-3"><span>DC콤보</span></label>
+                        </div>
+                        <div class="inp_btn charge_type04">
+                            <input type="radio" id="rdo4-4" name="rdo4">
+                            <label for="rdo4-4"><span>TYP2</span></label>
+                        </div>
+                        <div class="inp_btn charge_type05">
+                            <input type="radio" id="rdo4-5" name="rdo4">
+                            <label for="rdo4-5"><span>차데모</span></label>
+                        </div>
+                        <div class="inp_btn charge_type06">
+                            <input type="radio" id="rdo4-6" name="rdo4">
+                            <label for="rdo4-6"><span>AC3상</span></label>
+                        </div>
+                        <div class="inp_btn charge_type07">
+                            <input type="radio" id="rdo4-7" name="rdo4">
+                            <label for="rdo4-7"><span>TESLA</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inp_mix">
+                    <span class="label">충전상태</span>
+                    <div class="inp_btn_group">
+                        <div class="inp_btn">
+                            <input type="radio" id="rdo5-1" name="rdo5">
+                            <label for="rdo5-1"><span>충전대기</span></label>
+                        </div>
+                        <div class="inp_btn">
+                            <input type="radio" id="rdo5-2" name="rdo5">
+                            <label for="rdo5-2"><span>충전중</span></label>
+                        </div>
+                        <div class="inp_btn">
+                            <input type="radio" id="rdo5-5" name="rdo5">
+                            <label for="rdo5-5"><span>충전종료</span></label>
+                        </div>
+                        <div class="inp_btn">
+                            <input type="radio" id="rdo5-4" name="rdo5">
+                            <label for="rdo5-4"><span>정검중</span></label>
+                        </div>
+                        <div class="inp_btn">
+                            <input type="radio" id="rdo5-5" name="rdo5">
+                            <label for="rdo5-5"><span>통신이상</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inp_mix">
+                    <span class="label">충전요금</span>
+                    <div class="charge_box">
+                        <p>고객님께서 직접 충전요금을 설정할 수 있습니다.<br>0 ~ 600원+/kwh</p>
+                        <div class="dragbar">
+                            <input type="range" min="0" max="100" step="1" value="0">
+                        </div>
+                        <div class="dragbar_info">
+                            <span>0원</span>
+                            <span>600원 +</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inp_mix">
+                    <span class="label">주차</span>
+                    <div class="inp_btn_group">
+                        <div class="inp_btn">
+                            <input type="radio" id="rdo6-1" name="rdo6">
+                            <label for="rdo6-1"><span>무료</span></label>
+                        </div>
+                        <div class="inp_btn">
+                            <input type="radio" id="rdo6-2" name="rdo6">
+                            <label for="rdo6-2"><span>유료</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inp_mix">
+                    <span class="label">운영사업자</span>
+                    <div class="inp_sel_group">
+                        <div class="inp_sel">
+                            <input type="radio" id="rdo1-1" name="rdo1">
+                            <label for="rdo1-1"><span>전체</span></label>
+                        </div>
+                        <div class="inp_sel">
+                            <input type="radio" id="rdo1-2" name="rdo1">
+                            <label for="rdo1-2"><span>운영사업자1</span></label>
+                        </div>
+                        <div class="inp_sel">
+                            <input type="radio" id="rdo1-3" name="rdo1">
+                            <label for="rdo1-3"><span>운영사업자2</span></label>
+                        </div>
+                        <div class="inp_sel">
+                            <input type="radio" id="rdo1-4" name="rdo1">
+                            <label for="rdo1-4"><span>운영사업자3</span></label>
+                        </div>
+                        <div class="inp_sel">
+                            <input type="radio" id="rdo1-5" name="rdo1">
+                            <label for="rdo1-5"><span>운영사업자4</span></label>
+                        </div>
+                        <div class="inp_sel">
+                            <input type="radio" id="rdo1-6" name="rdo1">
+                            <label for="rdo1-6"><span>운영사업자5</span></label>
+                        </div>
+                        <div class="inp_sel">
+                            <input type="radio" id="rdo1-7" name="rdo1">
+                            <label for="rdo1-7"><span>운영사업자6</span></label>
+                        </div>
+                        <div class="inp_sel">
+                            <input type="radio" id="rdo1-8" name="rdo1">
+                            <label for="rdo1-8"><span>운영사업자7</span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn_group">
+                    <button type="button" class="btn_basic btn_gray"><span>취소</span></button>
+                    <button type="button" class="btn_basic"><span>적용</span></button>
+                </div>
             </div>
         </div>
     </div>
