@@ -481,9 +481,9 @@ textarea::placeholder{color:#999;font-family:"Pretendard"}
 .charge_state .state_title em{font-size:28px;line-height:36px;font-weight:500}
 .charge_state .state_title .desc{color:#868e96;line-height:24px;margin-top:10px;min-height:48px}
 .charge_state .state_title:after{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:143px;height:143px;box-shadow:8px 8px 15px rgba(150, 157, 168, 0.6);border-radius:50%;background:#f2f4f5}
-.charge_state .state_title.cancel:after{background:url(../img/charge_fail.png) no-repeat 50% 50%/143px auto}
-.charge_state .state_title.ing:after{background:url(../img/charge_ing.png) no-repeat 50% 50%/143px auto}
-.charge_state .state_title.complete:after{background:url(../img/charge_comp.png) no-repeat 50% 50%/143px auto}
+.charge_state .state_title.cancel:after{background:url(../img/charge_fail.png) no-repeat 50% 50%/203px auto}
+.charge_state .state_title.ing:after{background:url(../img/charge_ing.png) no-repeat 50% 50%/203px auto}
+.charge_state .state_title.complete:after{background:url(../img/charge_comp.png) no-repeat 50% 50%/203px auto}
 .charge_state .text_list{margin-top:40px}
 .charge_state .blick_list{margin-top:15px}
 .charge_state .btn_group{margin-top:40px}
