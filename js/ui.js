@@ -297,6 +297,18 @@ function bottomPopup(){
     })
 }
 
+//swipe
+function defaultSlide(){
+	const default_slide = new Swiper(".default_slide", {
+		slidesPerView: 'auto',
+		spaceBetween: 13,
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'bullets',
+		}
+	});
+}
+
 //jquery
 $(function(){
 	// scrollDock();
@@ -313,4 +325,5 @@ $(function(){
 	if($('.click_toast').length > 0){toastPopup();}
 	if($('.dragbar').length > 0){dragbar();}
 	if($('.bottom_popup').length > 0){bottomPopup();}
+	if($('.default_slide').length > 0){defaultSlide();}
 });
