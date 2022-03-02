@@ -299,13 +299,19 @@ function bottomPopup(){
 
 //swipe
 function defaultSlide(){
-	const default_slide = new Swiper(".default_slide", {
+	const default_slide = new Swiper(".payCard_slide", {
 		slidesPerView: 'auto',
 		spaceBetween: 13,
 		pagination: {
 			el: '.swiper-pagination',
 			type: 'bullets',
 		}
+	});
+}
+function attachSlide(){
+	const attach_slide = new Swiper(".attach_img_swipe", {
+		slidesPerView: 'auto',
+		spaceBetween: 8
 	});
 }
 
@@ -326,4 +332,5 @@ $(function(){
 	if($('.dragbar').length > 0){dragbar();}
 	if($('.bottom_popup').length > 0){bottomPopup();}
 	if($('.default_slide').length > 0){defaultSlide();}
+	if($('.attach_img_swipe').length > 0){attachSlide();}
 });
