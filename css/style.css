@@ -615,6 +615,7 @@ input, textarea{font-family:"Pretendard"}
 .favorite_chage_store .tbl_area tbody td{line-height:26px}
 .favorite_chage_store .tbl_area tbody tr:last-child th,
 .favorite_chage_store .tbl_area tbody tr:last-child td{border:0}
+.favorite_chage_store .tbl_area .favorite{vertical-align:top}
 
 /* dummy */
 .map_area .pin{position:absolute;top:30%;left:20%;width:54px;height:63px;background:url(../img/pin.png) no-repeat 0 0/54px auto}
