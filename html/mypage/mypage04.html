@@ -26,116 +26,114 @@
         </div>
     </header>
     <div id="container">
-        <div class="content">
-            <div class="mypage_charge">
-                <div class="inp_period">
-                    <div class="inp_btn_group">
-                        <div class="inp_btn">
-                            <input type="radio" id="period-1" name="period">
-                            <label for="period-1"><span>최근 1개월</span></label>
-                        </div>
-                        <div class="inp_btn">
-                            <input type="radio" id="period-2" name="period">
-                            <label for="period-2"><span>3개월</span></label>
-                        </div>
-                        <div class="inp_btn">
-                            <input type="radio" id="period-3" name="period">
-                            <label for="period-3"><span>6개월</span></label>
-                        </div>
-                        <div class="inp_btn">
-                            <input type="radio" id="period-4" name="period">
-                            <label for="period-4"><span>기간조회</span></label>
-                        </div>
+        <div class="content mypage_charge">
+            <div class="inp_period">
+                <div class="inp_btn_group">
+                    <div class="inp_btn">
+                        <input type="radio" id="period-1" name="period">
+                        <label for="period-1"><span>최근 1개월</span></label>
                     </div>
-                    <div class="sel_period">
-                        <div class="select_wrap">
-                            <select data-msg="기간을 선택해주세요." data-title="기간을 선택해주세요."><!-- data-title값을 titSelect에 넣어줌 -->
-                                <option value="list sample 1">2021년 12월</option>
-                                <option value="list sample 2">2021년 11월</option>
-                                <option value="list sample 3">2021년 10월</option>
-                                <option value="list sample 4">2021년 09월</option>
-                                <option value="list sample 5">2021년 08월</option>
-                            </select>
-                        </div>
+                    <div class="inp_btn">
+                        <input type="radio" id="period-2" name="period">
+                        <label for="period-2"><span>3개월</span></label>
+                    </div>
+                    <div class="inp_btn">
+                        <input type="radio" id="period-3" name="period">
+                        <label for="period-3"><span>6개월</span></label>
+                    </div>
+                    <div class="inp_btn">
+                        <input type="radio" id="period-4" name="period">
+                        <label for="period-4"><span>기간조회</span></label>
                     </div>
                 </div>
+                <div class="sel_period">
+                    <div class="select_wrap">
+                        <select data-msg="기간을 선택해주세요." data-title="기간을 선택해주세요."><!-- data-title값을 titSelect에 넣어줌 -->
+                            <option value="list sample 1">2021년 12월</option>
+                            <option value="list sample 2">2021년 11월</option>
+                            <option value="list sample 3">2021년 10월</option>
+                            <option value="list sample 4">2021년 09월</option>
+                            <option value="list sample 5">2021년 08월</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
 
-                <!-- 내역 없는 경우
+            <!-- 내역 없는 경우
+            <div class="data_none">
+                <p>충전 내역이 없습니다.</p>
+            </div> -->
+
+            <h3 class="title_dep3">2022년 1월 충전내역</h3>
+            <ul class="text_list type_box">
+                <li>
+                    <em class="title">충전</em>
+                    <span class="text"><b class="point_color">5회</b></span>
+                </li>
+                <li>
+                    <em class="title">충전량</em>
+                    <span class="text"><b class="point_color">270kwh</b></span>
+                </li>
+                <li>
+                    <em class="title">총 충전금액</em>
+                    <span class="text"><b class="point_color">75,000원</b></span>
+                </li>
+            </ul>
+            
+            <!-- 내역 없는 경우
                 <div class="data_none">
-                    <p>충전 내역이 없습니다.</p>
-                </div> -->
+                <p>해당 기간 내 충전내역이 없습니다.</p>
+            </div> -->
 
-                <h3 class="title_dep3">2022년 1월 충전내역</h3>
-                <ul class="text_list type_box">
-                    <li>
-                        <em class="title">충전</em>
-                        <span class="text"><b class="point_color">5회</b></span>
-                    </li>
-                    <li>
-                        <em class="title">충전량</em>
-                        <span class="text"><b class="point_color">270kwh</b></span>
-                    </li>
-                    <li>
-                        <em class="title">총 충전금액</em>
-                        <span class="text"><b class="point_color">75,000원</b></span>
-                    </li>
-                </ul>
-                
-                <!-- 내역 없는 경우
-                    <div class="data_none">
-                    <p>해당 기간 내 충전내역이 없습니다.</p>
-                </div> -->
-
-                <div class="tbl_area">
-                    <table class="tbl_h">
-                        <colgroup>
-                            <col>
-                            <col style="width:75px">
-                            <col style="width:65px">
-                            <col style="width:90px">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th scope="col">충전소명</th>
-                                <th scope="col">충전요금</th>
-                                <th scope="col">충전량</th>
-                                <th scope="col">충전일자</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">이마트 성수점</th>
-                                <td class="tc">13,000원</td>
-                                <td class="tc">50kwh</td>
-                                <td class="tc">2022.02.12</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">이마트 성수점</th>
-                                <td class="tc">13,000원</td>
-                                <td class="tc">50kwh</td>
-                                <td class="tc">2022.02.12</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">이마트 성수점</th>
-                                <td class="tc">13,000원</td>
-                                <td class="tc">50kwh</td>
-                                <td class="tc">2022.02.12</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">이마트 성수점</th>
-                                <td class="tc">13,000원</td>
-                                <td class="tc">50kwh</td>
-                                <td class="tc">2022.02.12</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">이마트 성수점</th>
-                                <td class="tc">13,000원</td>
-                                <td class="tc">50kwh</td>
-                                <td class="tc">2022.02.12</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="tbl_area">
+                <table class="tbl_h">
+                    <colgroup>
+                        <col>
+                        <col style="width:75px">
+                        <col style="width:65px">
+                        <col style="width:90px">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">충전소명</th>
+                            <th scope="col">충전요금</th>
+                            <th scope="col">충전량</th>
+                            <th scope="col">충전일자</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">이마트 성수점</th>
+                            <td class="tc">13,000원</td>
+                            <td class="tc">50kwh</td>
+                            <td class="tc">2022.02.12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이마트 성수점</th>
+                            <td class="tc">13,000원</td>
+                            <td class="tc">50kwh</td>
+                            <td class="tc">2022.02.12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이마트 성수점</th>
+                            <td class="tc">13,000원</td>
+                            <td class="tc">50kwh</td>
+                            <td class="tc">2022.02.12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이마트 성수점</th>
+                            <td class="tc">13,000원</td>
+                            <td class="tc">50kwh</td>
+                            <td class="tc">2022.02.12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이마트 성수점</th>
+                            <td class="tc">13,000원</td>
+                            <td class="tc">50kwh</td>
+                            <td class="tc">2022.02.12</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

@@ -26,185 +26,183 @@
         </div>
     </header>
     <div id="container">
-        <div class="content">
-            <div class="mypage_payment">
-                <div class="inp_period">
-                    <div class="inp_btn_group">
-                        <div class="inp_btn">
-                            <input type="radio" id="period-1" name="period">
-                            <label for="period-1"><span>최근 1개월</span></label>
-                        </div>
-                        <div class="inp_btn">
-                            <input type="radio" id="period-2" name="period">
-                            <label for="period-2"><span>3개월</span></label>
-                        </div>
-                        <div class="inp_btn">
-                            <input type="radio" id="period-3" name="period">
-                            <label for="period-3"><span>6개월</span></label>
-                        </div>
-                        <div class="inp_btn">
-                            <input type="radio" id="period-4" name="period">
-                            <label for="period-4"><span>기간조회</span></label>
-                        </div>
+        <div class="content mypage_payment">
+            <div class="inp_period">
+                <div class="inp_btn_group">
+                    <div class="inp_btn">
+                        <input type="radio" id="period-1" name="period">
+                        <label for="period-1"><span>최근 1개월</span></label>
                     </div>
-                    <div class="sel_period">
-                        <div class="select_wrap">
-                            <select data-msg="기간을 선택해주세요." data-title="기간을 선택해주세요."><!-- data-title값을 titSelect에 넣어줌 -->
-                                <option value="list sample 1">2021년 12월</option>
-                                <option value="list sample 2">2021년 11월</option>
-                                <option value="list sample 3">2021년 10월</option>
-                                <option value="list sample 4">2021년 09월</option>
-                                <option value="list sample 5">2021년 08월</option>
-                            </select>
-                        </div>
+                    <div class="inp_btn">
+                        <input type="radio" id="period-2" name="period">
+                        <label for="period-2"><span>3개월</span></label>
+                    </div>
+                    <div class="inp_btn">
+                        <input type="radio" id="period-3" name="period">
+                        <label for="period-3"><span>6개월</span></label>
+                    </div>
+                    <div class="inp_btn">
+                        <input type="radio" id="period-4" name="period">
+                        <label for="period-4"><span>기간조회</span></label>
                     </div>
                 </div>
-
-                <!-- 내역 없는 경우
-                <div class="data_none">
-                    <p>결제 내역이 없습니다.</p>
-                </div> -->
-
-                <div class="tbl_list">
-                    <ul>
-                        <li>
-                            <div class="charge">
-                                <span class="payment">50,000원 <span class="info_text">결제</span></span>
-                            </div>
-                            <div class="context">
-                                <em>금액 충전</em>
-                                <span class="charge_time">11:13</span>
-                            </div>
-                            <div class="info">
-                                <span class="date">2021.02.04</span>
-                                <a href="#" class="receipt">영수증</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="charge">
-                                <span class="cancel">20,000원 <span class="info_text">부분취소</span></span>
-                            </div>
-                            <div class="context">
-                                <em>금액 충전</em>
-                                <span class="charge_time">11:13</span>
-                            </div>
-                            <div class="info">
-                                <span class="date">2021.02.04</span>
-                                <a href="#" class="receipt">영수증</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="charge">
-                                <span class="payment">50,000원 <span class="info_text">결제</span></span>
-                            </div>
-                            <div class="context">
-                                <em>금액 충전</em>
-                                <span class="charge_time">11:13</span>
-                            </div>
-                            <div class="info">
-                                <span class="date">2021.02.04</span>
-                                <a href="#" class="receipt">영수증</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="charge">
-                                <span class="cancel">20,000원 <span class="info_text">부분취소</span></span>
-                            </div>
-                            <div class="context">
-                                <em>금액 충전</em>
-                                <span class="charge_time">11:13</span>
-                            </div>
-                            <div class="info">
-                                <span class="date">2021.02.04</span>
-                                <a href="#" class="receipt">영수증</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="charge">
-                                <span class="payment">50,000원 <span class="info_text">결제</span></span>
-                            </div>
-                            <div class="context">
-                                <em>금액 충전</em>
-                                <span class="charge_time">11:13</span>
-                            </div>
-                            <div class="info">
-                                <span class="date">2021.02.04</span>
-                                <a href="#" class="receipt">영수증</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="charge">
-                                <span class="cancel">20,000원 <span class="info_text">부분취소</span></span>
-                            </div>
-                            <div class="context">
-                                <em>금액 충전</em>
-                                <span class="charge_time">11:13</span>
-                            </div>
-                            <div class="info">
-                                <span class="date">2021.02.04</span>
-                                <a href="#" class="receipt">영수증</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="charge">
-                                <span class="payment">50,000원 <span class="info_text">결제</span></span>
-                            </div>
-                            <div class="context">
-                                <em>금액 충전</em>
-                                <span class="charge_time">11:13</span>
-                            </div>
-                            <div class="info">
-                                <span class="date">2021.02.04</span>
-                                <a href="#" class="receipt">영수증</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="charge">
-                                <span class="cancel">20,000원 <span class="info_text">부분취소</span></span>
-                            </div>
-                            <div class="context">
-                                <em>금액 충전</em>
-                                <span class="charge_time">11:13</span>
-                            </div>
-                            <div class="info">
-                                <span class="date">2021.02.04</span>
-                                <a href="#" class="receipt">영수증</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="charge">
-                                <span class="payment">50,000원 <span class="info_text">결제</span></span>
-                            </div>
-                            <div class="context">
-                                <em>금액 충전</em>
-                                <span class="charge_time">11:13</span>
-                            </div>
-                            <div class="info">
-                                <span class="date">2021.02.04</span>
-                                <a href="#" class="receipt">영수증</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="charge">
-                                <span class="cancel">20,000원 <span class="info_text">부분취소</span></span>
-                            </div>
-                            <div class="context">
-                                <em>금액 충전</em>
-                                <span class="charge_time">11:13</span>
-                            </div>
-                            <div class="info">
-                                <span class="date">2021.02.04</span>
-                                <a href="#" class="receipt">영수증</a>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="sel_period">
+                    <div class="select_wrap">
+                        <select data-msg="기간을 선택해주세요." data-title="기간을 선택해주세요."><!-- data-title값을 titSelect에 넣어줌 -->
+                            <option value="list sample 1">2021년 12월</option>
+                            <option value="list sample 2">2021년 11월</option>
+                            <option value="list sample 3">2021년 10월</option>
+                            <option value="list sample 4">2021년 09월</option>
+                            <option value="list sample 5">2021년 08월</option>
+                        </select>
+                    </div>
                 </div>
-                
-                <!-- 내역 없는 경우
-                    <div class="data_none">
-                    <p>해당 기간 내 결제내역이 없습니다.</p>
-                </div> -->
             </div>
+
+            <!-- 내역 없는 경우
+            <div class="data_none">
+                <p>결제 내역이 없습니다.</p>
+            </div> -->
+
+            <div class="tbl_list">
+                <ul>
+                    <li>
+                        <div class="charge">
+                            <span class="payment">50,000원 <span class="info_text">결제</span></span>
+                        </div>
+                        <div class="context">
+                            <em>금액 충전</em>
+                            <span class="charge_time">11:13</span>
+                        </div>
+                        <div class="info">
+                            <span class="date">2021.02.04</span>
+                            <a href="#" class="receipt">영수증</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="charge">
+                            <span class="cancel">20,000원 <span class="info_text">부분취소</span></span>
+                        </div>
+                        <div class="context">
+                            <em>금액 충전</em>
+                            <span class="charge_time">11:13</span>
+                        </div>
+                        <div class="info">
+                            <span class="date">2021.02.04</span>
+                            <a href="#" class="receipt">영수증</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="charge">
+                            <span class="payment">50,000원 <span class="info_text">결제</span></span>
+                        </div>
+                        <div class="context">
+                            <em>금액 충전</em>
+                            <span class="charge_time">11:13</span>
+                        </div>
+                        <div class="info">
+                            <span class="date">2021.02.04</span>
+                            <a href="#" class="receipt">영수증</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="charge">
+                            <span class="cancel">20,000원 <span class="info_text">부분취소</span></span>
+                        </div>
+                        <div class="context">
+                            <em>금액 충전</em>
+                            <span class="charge_time">11:13</span>
+                        </div>
+                        <div class="info">
+                            <span class="date">2021.02.04</span>
+                            <a href="#" class="receipt">영수증</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="charge">
+                            <span class="payment">50,000원 <span class="info_text">결제</span></span>
+                        </div>
+                        <div class="context">
+                            <em>금액 충전</em>
+                            <span class="charge_time">11:13</span>
+                        </div>
+                        <div class="info">
+                            <span class="date">2021.02.04</span>
+                            <a href="#" class="receipt">영수증</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="charge">
+                            <span class="cancel">20,000원 <span class="info_text">부분취소</span></span>
+                        </div>
+                        <div class="context">
+                            <em>금액 충전</em>
+                            <span class="charge_time">11:13</span>
+                        </div>
+                        <div class="info">
+                            <span class="date">2021.02.04</span>
+                            <a href="#" class="receipt">영수증</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="charge">
+                            <span class="payment">50,000원 <span class="info_text">결제</span></span>
+                        </div>
+                        <div class="context">
+                            <em>금액 충전</em>
+                            <span class="charge_time">11:13</span>
+                        </div>
+                        <div class="info">
+                            <span class="date">2021.02.04</span>
+                            <a href="#" class="receipt">영수증</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="charge">
+                            <span class="cancel">20,000원 <span class="info_text">부분취소</span></span>
+                        </div>
+                        <div class="context">
+                            <em>금액 충전</em>
+                            <span class="charge_time">11:13</span>
+                        </div>
+                        <div class="info">
+                            <span class="date">2021.02.04</span>
+                            <a href="#" class="receipt">영수증</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="charge">
+                            <span class="payment">50,000원 <span class="info_text">결제</span></span>
+                        </div>
+                        <div class="context">
+                            <em>금액 충전</em>
+                            <span class="charge_time">11:13</span>
+                        </div>
+                        <div class="info">
+                            <span class="date">2021.02.04</span>
+                            <a href="#" class="receipt">영수증</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="charge">
+                            <span class="cancel">20,000원 <span class="info_text">부분취소</span></span>
+                        </div>
+                        <div class="context">
+                            <em>금액 충전</em>
+                            <span class="charge_time">11:13</span>
+                        </div>
+                        <div class="info">
+                            <span class="date">2021.02.04</span>
+                            <a href="#" class="receipt">영수증</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- 내역 없는 경우
+                <div class="data_none">
+                <p>해당 기간 내 결제내역이 없습니다.</p>
+            </div> -->
         </div>
     </div>
     <div id="actionBar">
