@@ -331,6 +331,6 @@ $(function(){
 	if($('.click_toast').length > 0){toastPopup();}
 	if($('.dragbar').length > 0){dragbar();}
 	if($('.bottom_popup').length > 0){bottomPopup();}
-	if($('.default_slide').length > 0){defaultSlide();}
+	if($('.payCard_slide').length > 0){defaultSlide();}
 	if($('.attach_img_swipe').length > 0){attachSlide();}
 });

@@ -26,85 +26,75 @@
         </div>
     </header>
     <div id="container">
-        <div class="content">
-            <div class="tab_area fixed_tab">
-                <ul class="tab_list">
-                    <li class="on"><a href="#">공지사항</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">요금문의</a></li>
-                </ul>
+        <div class="content notice_list">
+            <div class="inp_area">
+                <div class="select_wrap">
+                    <select data-msg="검색 유형 선택" data-title="검색 유형 선택">
+                        <option value="select1">전체</option>
+                        <option value="select2">제목</option>
+                        <option value="select3">내용</option>
+                    </select>
+                </div>
+                <div class="inp_group">
+                    <div class="inp_sel">
+                        <input type="text" placeholder="검색어를 입력해 주세요">
+                    </div>
+                    <button type="button" class="inp_btn">검색<span></span></button>
+                </div>
             </div>
 
-            <div class="notice_list">
-                <div class="inp_area">
-                    <div class="select_wrap">
-                        <select data-msg="검색 유형 선택" data-title="검색 유형 선택">
-                            <option value="select1">전체</option>
-                            <option value="select2">제목</option>
-                            <option value="select3">내용</option>
-                        </select>
-                    </div>
-                    <div class="inp_group">
-                        <div class="inp_sel">
-                            <input type="text" placeholder="검색어를 입력해 주세요">
-                        </div>
-                        <button type="button" class="inp_btn">검색<span></span></button>
-                    </div>
-                </div>
+            <div class="tbl_area board_type">
+                <p class="tbl_info">총 <b class="point_color">10</b>건의 게시물이 있습니다.</p>
+                <!-- 공지사항 있는 경우 -->
+                <table class="tbl_h">
+                    <colgroup>
+                        <col>
+                        <col style="width:100px">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">제목</th>
+                            <th scope="col">등록일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><a href="#">개인정보처리방침 변경 안내</a><i class="ic_new"></i></th>
+                            <td class="tc">2022.02.14</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="#">포인트 전환 서비스 일부 포인트 사용 제한 안내</a><i class="ic_new"></i></th>
+                            <td class="tc">2022.02.14</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="#">나이스정보통신 전자금융거래 이용약관 변경 안내</a><i class="ic_new"></i></th>
+                            <td class="tc">2022.02.14</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="#">개인정보 처리방침 변경 안내</a></th>
+                            <td class="tc">2022.02.14</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="#">이용 약관 개정 안내</a></th>
+                            <td class="tc">2022.02.14</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="#">이용 약관 개정 안내</a></th>
+                            <td class="tc">2022.02.14</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><a href="#">이용 약관 개정 안내</a></th>
+                            <td class="tc">2022.02.14</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- //공지사항 있는 경우 -->
 
-                <div class="tbl_area board_type">
-                    <p class="tbl_info">총 <b class="point_color">10</b>건의 게시물이 있습니다.</p>
-                    <!-- 공지사항 있는 경우 -->
-                    <table class="tbl_h">
-                        <colgroup>
-                            <col>
-                            <col style="width:100px">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th scope="col">제목</th>
-                                <th scope="col">등록일</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row"><a href="#">개인정보처리방침 변경 안내</a><i class="ic_new"></i></th>
-                                <td class="tc">2022.02.14</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><a href="#">포인트 전환 서비스 일부 포인트 사용 제한 안내</a><i class="ic_new"></i></th>
-                                <td class="tc">2022.02.14</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><a href="#">나이스정보통신 전자금융거래 이용약관 변경 안내</a><i class="ic_new"></i></th>
-                                <td class="tc">2022.02.14</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><a href="#">개인정보 처리방침 변경 안내</a></th>
-                                <td class="tc">2022.02.14</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><a href="#">이용 약관 개정 안내</a></th>
-                                <td class="tc">2022.02.14</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><a href="#">이용 약관 개정 안내</a></th>
-                                <td class="tc">2022.02.14</td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><a href="#">이용 약관 개정 안내</a></th>
-                                <td class="tc">2022.02.14</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!-- //공지사항 있는 경우 -->
-
-                    <!-- 공지사항 없는 경우 -->
-                    <div class="data_none">
-                        <p>등록된 공지사항이 없습니다.</p>
-                    </div>
-                    <!-- //공지사항 없는 경우 -->
+                <!-- 공지사항 없는 경우 -->
+                <div class="data_none">
+                    <p>등록된 공지사항이 없습니다.</p>
                 </div>
+                <!-- //공지사항 없는 경우 -->
             </div>
         </div>
     </div>

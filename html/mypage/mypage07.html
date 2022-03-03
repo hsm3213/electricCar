@@ -20,117 +20,45 @@
 <body>
     <header id="header">
         <button type="button" class="ic_back"><span class="blind">뒤로가기</span></button>
-        <h2 class="page_title">1:1 문의</h2>
+        <h2 class="page_title">자주 사용하는 메뉴</h2>
         <div class="btn_area">
             <button type="button" class="ic_home"><span class="blind">메인으로가기</span></button>
         </div>
     </header>
     <div id="container">
-        <div class="content mypage_inquiry">
-            <div class="tab_area fixed_tab">
-                <ul class="tab_list">
-                    <li class="on"><a href="#">문의하기</a></li>
-                    <li><a href="#">문의내역</a></li>
-                </ul>
-            </div>
-
-            <div class="inp_form">
-                <div class="inp_sel">
-                    <label for="text1">연락처</label>
-                    <input type="text" id="text1" value="010-****-1234" disabled>
-                </div>
-                <div class="inp_mix">
-                    <span class="label">답변 알림</span>
-                    <div class="inline_rdo">
-                        <div class="inp_sel">
-                            <input type="radio" id="rdo1" name="rdo1">
-                            <label for="rdo1"><span>SMS</span></label>
-                        </div>
-                        <div class="inp_sel">
-                            <input type="radio" id="rdo2" name="rdo1">
-                            <label for="rdo2"><span>이메일</span></label>
-                        </div>
-                        <div class="inp_sel">
-                            <input type="radio" id="rdo3" name="rdo1">
-                            <label for="rdo3"><span>PUSH</span></label>
-                        </div>
-                    </div>
-                </div>
-                <div class="select_wrap">
-                    <select data-msg="문의 유형을 선택해주세요." data-title="문의 유형을 선택"><!-- data-title값을 titSelect에 넣어줌 -->
-                        <option value="list sample 1">회원</option>
-                        <option value="list sample 2">기타</option>
-                    </select>
-                </div>
-                <div class="inp_sel">
-                    <input type="text" placeholder="제목을 입력해 주세요. (30자 이내)">
-                </div>
-                <div class="inp_sel">
-                    <textarea class="textarea" placeholder="내용을 입력해주세요."></textarea>
-                </div>
-                <div class="inp_mix">
-                    <span class="label">첨부파일 등록</span>
-                    <div class="attach_wrap">
-                        <div class="attach_item add_file"><!-- 파일 첨부 후 class 추가 -->
-                            <div class="attach_file">
-                                <figure><img src="../../img/@attach_img.png" alt=""></figure>
-                                <button type="button" class="btn_del"><span class="blind">삭제</span></button>
-                            </div>
-                            <div class="inp_attach">
-                                <label for="attach1"><span class="blind">파일첨부</span></label>
-                                <input type="file" id="attach1">
-                            </div>
-                        </div>
-                        <div class="attach_item add_file"><!-- 파일 첨부 후 class 추가 -->
-                            <div class="attach_file">
-                                <figure><img src="../../img/@attach_img.png" alt=""></figure>
-                                <button type="button" class="btn_del"><span class="blind">삭제</span></button>
-                            </div>
-                            <div class="inp_attach">
-                                <label for="attach1"><span class="blind">파일첨부</span></label>
-                                <input type="file" id="attach1">
-                            </div>
-                        </div>
-                        <!-- //파일 첨부 후 -->
-                        <div class="attach_item">
-                            <div class="attach_file">
-                                <figure><img src="../../img/@attach_img.png" alt=""></figure>
-                                <button type="button" class="btn_del"><span class="blind">삭제</span></button>
-                            </div>
-                            <div class="inp_attach">
-                                <label for="attach1"><span class="blind">파일첨부</span></label>
-                                <input type="file" id="attach1">
-                            </div>
-                        </div>
-                        <div class="attach_item">
-                            <div class="attach_file">
-                                <figure><img src="../../img/@attach_img.png" alt=""></figure>
-                                <button type="button" class="btn_del"><span class="blind">삭제</span></button>
-                            </div>
-                            <div class="inp_attach">
-                                <label for="attach2"><span class="blind">파일첨부</span></label>
-                                <input type="file" id="attach2">
-                            </div>
-                        </div>
-                        <div class="attach_file">
-                            <figure><img src="../../img/@attach_img.png" alt=""></figure>
-                            <button type="button" class="btn_del"><span class="blind">삭제</span></button>
-                        </div>
-                        <div class="attach_item">
-                            <div class="inp_attach">
-                                <label for="attach3"><span class="blind">파일첨부</span></label>
-                                <input type="file" id="attach3">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info_text">10MB 미만의 JPG, GIF, PNG 파일만 등록 가능합니다.<br>상품과 무관한 내용이거나 음란 및 불법적인 내용은 통보없이 삭제될 수 있습니다.</div>
-                </div>
-            </div>
-            
-            <div class="btn_group">
-                <button type="button" class="btn_basic btn_gray"><span>취소</span></button>
-                <button type="button" class="btn_basic"><span>확인</span></button>
-            </div>
+        <div class="content favorite_menu_set">
+            <em class="title">메인에 노출되는 <br><b>자주 사용하느 메뉴</b>를 선택해 주세요.</em>
+            <ul class="inp_favorite">
+                <li class="inp_sel inp_only favorite_charge">
+                    <input type="checkbox" id="fchk1">
+                    <label for="fchk1">최근 충전내역</label>
+                </li>
+                <li class="inp_sel inp_only favorite_inquiry">
+                    <input type="checkbox" id="fchk2">
+                    <label for="fchk2">1:1문의</label>
+                </li>
+                <li class="inp_sel inp_only favorite_location">
+                    <input type="checkbox" id="fchk3">
+                    <label for="fchk3">최근 이용 충전소</label>
+                </li>
+                <li class="inp_sel inp_only favorite_car">
+                    <input type="checkbox" id="fchk4">
+                    <label for="fchk4">등록 차량정보</label>
+                </li>
+                <li class="inp_sel inp_only favorite_edit">
+                    <input type="checkbox" id="fchk5">
+                    <label for="fchk5">회원 정보수정</label>
+                </li>
+                <li class="inp_sel inp_only favorite_point">
+                    <input type="checkbox" id="fchk6">
+                    <label for="fchk6">포인트</label>
+                </li>
+                <li class="inp_sel inp_only favorite_trouble">
+                    <input type="checkbox" id="fchk7">
+                    <label for="fchk7">고장신고</label>
+                </li>
+            </ul>
+            <p class="blick_text">중복 선택 가능합니다.</p>
         </div>
     </div>
     <div id="actionBar">
