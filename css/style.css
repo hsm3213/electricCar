@@ -360,7 +360,7 @@ input, textarea{font-family:"Pretendard"}
 .img_draw .ctrl_slide .swiper-slide figure img{width:150%;height:150%}
 
 .img_slider{position:absolute;top:0;left:0;right:0;bottom:0;padding:172px 0;box-sizing:border-box}
-/* .img_slider .swiper-wrapper{align-items:center} */
+.img_slider .swiper-slide{position:relative;overflow:hidden}
 .img_slider .swiper-slide figure{display:block}
 .img_slider .swiper-slide figure img{position:absolute;top:50%;left:0;transform:translateY(-50%);width:100%}
 
